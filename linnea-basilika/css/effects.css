@@ -1,0 +1,292 @@
+/* Motion layer: purposeful entrances, tactile feedback and spatial continuity. */
+:root {
+  --motion-instant: 80ms;
+  --motion-fast: 180ms;
+  --motion-normal: 350ms;
+  --motion-slow: 650ms;
+  --motion-ease: cubic-bezier(.22, 1, .36, 1);
+}
+
+/* Page opening */
+.page-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 5000;
+  display: none;
+  place-items: center;
+  overflow: hidden;
+  pointer-events: all;
+}
+.js .page-intro { display: grid; }
+.page-intro-panel {
+  position: absolute;
+  inset-block: 0;
+  width: 51%;
+  background: #111310;
+  transition: transform var(--motion-slow) var(--motion-ease);
+  will-change: transform;
+}
+.page-intro-panel-left { left: 0; transform-origin: left; border-right: 1px solid rgba(232, 117, 54, 0.2); }
+.page-intro-panel-right { right: 0; transform-origin: right; border-left: 1px solid rgba(120, 184, 90, 0.2); }
+.page-intro-mark {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  color: #F8F6F0;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity var(--motion-normal) ease, transform var(--motion-normal) var(--motion-ease);
+}
+.page-intro-mark img {
+  width: 58px;
+  height: 58px;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  box-shadow: 0 16px 42px rgba(0, 0, 0, .45);
+}
+.page-intro-mark span {
+  font-family: var(--font-heading);
+  font-size: clamp(1.65rem, 4vw, 2.5rem);
+  letter-spacing: -.03em;
+  color: #F8F6F0;
+}
+.page-intro-mark small {
+  margin-top: 8px;
+  color: var(--cinema-orange, #E87536);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
+.page-intro.is-leaving { pointer-events: none; }
+.page-intro.is-leaving .page-intro-panel-left { transform: translateX(-100%); }
+.page-intro.is-leaving .page-intro-panel-right { transform: translateX(100%); }
+.page-intro.is-leaving .page-intro-mark { opacity: 0; transform: translateY(-10px); }
+
+/* Scroll progress uses the browser compositor, without a scroll listener. */
+.reading-progress {
+  height: 3px !important;
+  background: linear-gradient(90deg, #78B85A, #E87536) !important;
+  box-shadow: 0 0 10px rgba(232, 117, 54, 0.6) !important;
+}
+@supports (animation-timeline: scroll()) {
+  .reading-progress {
+    animation: reading-progress linear both;
+    animation-timeline: scroll(root block);
+  }
+}
+@keyframes reading-progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+/* Hero choreography establishes hierarchy only once. */
+@media (prefers-reduced-motion: no-preference) {
+  .bistro-hero-copy h1,
+  .bistro-hero-copy > p,
+  .bistro-hero-actions,
+  .bistro-hero-details { animation: hero-rise var(--motion-slow) var(--motion-ease) both !important; }
+  .bistro-hero-copy > p { animation-delay: 90ms !important; }
+  .bistro-hero-actions { animation-delay: 160ms !important; }
+  .bistro-hero-details { animation-delay: 230ms !important; }
+  .bistro-hero-photo { animation: hero-photo-in 900ms var(--motion-ease) both !important; }
+}
+@keyframes hero-rise {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes hero-photo-in {
+  from { opacity: .35; transform: translateX(26px) scale(.975); clip-path: inset(0 10% 0 0 round 30px); }
+  to { opacity: 1; transform: translateX(0) scale(1); clip-path: inset(0 round 30px); }
+}
+
+/* Scroll reveal. Content remains visible until JavaScript explicitly arms it. */
+.motion-ready .motion-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--motion-slow) var(--motion-ease), transform var(--motion-slow) var(--motion-ease);
+}
+.motion-ready .motion-reveal.motion-entered { opacity: 1; transform: translateY(0); }
+.motion-ready .motion-reveal[data-motion="left"] { transform: translateX(-24px); }
+.motion-ready .motion-reveal[data-motion="right"] { transform: translateX(24px); }
+.motion-ready .motion-reveal.motion-entered[data-motion] { transform: translate(0); }
+.motion-ready .motion-reveal:nth-child(2) { transition-delay: 70ms; }
+.motion-ready .motion-reveal:nth-child(3) { transition-delay: 140ms; }
+
+/* Navigation and mobile menu */
+#main-nav { transition: background var(--motion-normal) ease, box-shadow var(--motion-normal) ease, transform var(--motion-normal) var(--motion-ease) !important; }
+#main-nav.scrolled { box-shadow: 0 12px 35px rgba(27, 65, 44, .075) !important; }
+.nav-link { transition: color var(--motion-fast) ease, transform var(--motion-fast) var(--motion-ease) !important; }
+.nav-link:hover { transform: translateY(-1px); }
+#mobile-menu.open .mobile-nav-links li,
+#mobile-menu.open .mobile-menu-actions,
+#mobile-menu.open .mobile-menu-info { animation: mobile-item-in var(--motion-normal) var(--motion-ease) both; }
+#mobile-menu.open .mobile-nav-links li:nth-child(2) { animation-delay: 45ms; }
+#mobile-menu.open .mobile-nav-links li:nth-child(3) { animation-delay: 90ms; }
+#mobile-menu.open .mobile-nav-links li:nth-child(4) { animation-delay: 135ms; }
+#mobile-menu.open .mobile-menu-actions { animation-delay: 180ms; }
+#mobile-menu.open .mobile-menu-info { animation-delay: 225ms; }
+@keyframes mobile-item-in { from { opacity: 0; transform: translateX(18px); } to { opacity: 1; transform: translateX(0); } }
+
+/* Tactile interactive surfaces */
+.bistro-button,
+.btn-order,
+.catalog-checkout,
+.catalog-add-btn,
+.add-btn,
+.btn-submit-order,
+.btn-submit-booking,
+.btn-map,
+.btn-call,
+.modal-call-btn,
+.mobile-cart-bar {
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--motion-fast) var(--motion-ease), background-color var(--motion-fast) ease, box-shadow var(--motion-fast) ease !important;
+}
+.bistro-button:hover,
+.btn-order:hover,
+.catalog-checkout:hover,
+.btn-submit-order:hover,
+.btn-submit-booking:hover,
+.btn-map:hover { transform: translateY(-2px); }
+.bistro-button:active,
+.btn-order:active,
+.catalog-checkout:active,
+.catalog-add-btn:active,
+.add-btn:active,
+.btn-submit-order:active,
+.btn-submit-booking:active,
+.btn-map:active,
+.btn-call:active,
+.mobile-cart-bar:active { transform: scale(.97) !important; }
+.click-ripple {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin: -9px 0 0 -9px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .42);
+  pointer-events: none;
+  animation: ripple-out 560ms ease-out forwards;
+}
+@keyframes ripple-out { to { opacity: 0; transform: scale(13); } }
+
+/* Cards gain depth on hover without continuous motion. */
+.bistro-dish,
+.menu-card.catalog-menu-card,
+.extras-card-grid .extra-row,
+.drink-row,
+.booking-point,
+.location-detail {
+  transition: transform var(--motion-normal) var(--motion-ease), box-shadow var(--motion-normal) ease, border-color var(--motion-fast) ease, background-color var(--motion-fast) ease !important;
+}
+.bistro-dish:hover { transform: translateY(-7px); }
+.menu-card.catalog-menu-card:hover,
+.extras-card-grid .extra-row:hover,
+.drink-row:hover { transform: translateY(-3px); }
+.bistro-dish img,
+.menu-collection img,
+.menu-section-visual img { transition: transform 700ms var(--motion-ease), filter var(--motion-normal) ease !important; }
+.bistro-dish:hover img,
+.menu-collection:hover img,
+.menu-section:hover .menu-section-visual img { transform: scale(1.035); }
+
+/* Tabs and filters communicate state changes. */
+.menu-tab-btn,
+.filter-btn { transition: transform var(--motion-fast) var(--motion-ease), background-color var(--motion-fast) ease, color var(--motion-fast) ease, border-color var(--motion-fast) ease !important; }
+.menu-tab-btn:hover,
+.filter-btn:hover { transform: translateY(-1px); }
+.menu-tab-btn:active,
+.filter-btn:active { transform: scale(.96); }
+.menu-tab-btn.active,
+.filter-btn.active { animation: control-select 260ms var(--motion-ease); }
+@keyframes control-select { 50% { transform: scale(.96); } }
+
+/* Cart feedback and toast */
+.cart-count,
+.mobile-cart-count,
+[data-cart-total] { display: inline-block; transform-origin: center; }
+.cart-feedback { animation: cart-pop 420ms var(--motion-ease); }
+@keyframes cart-pop { 45% { transform: scale(1.22) rotate(-3deg); } }
+.catalog-cart-item,
+.cart-item { animation: cart-item-in var(--motion-normal) var(--motion-ease) both; }
+@keyframes cart-item-in { from { opacity: 0; transform: translateX(12px); } to { opacity: 1; transform: translateX(0); } }
+.fly-plus-one {
+  position: fixed;
+  z-index: 4200;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--cinema-orange, #E87536);
+  color: #111310;
+  font-size: .8rem;
+  font-weight: 800;
+  pointer-events: none;
+  box-shadow: 0 4px 14px rgba(232, 117, 54, 0.45);
+  animation: fly-plus-one 700ms var(--motion-ease) forwards;
+}
+@keyframes fly-plus-one {
+  from { opacity: 1; transform: translate(-50%, -50%) scale(.8); }
+  to { opacity: 0; transform: translate(-50%, -95px) scale(1.15); }
+}
+.cart-toast {
+  display: flex !important;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 22px !important;
+  border-radius: 999px !important;
+  background: rgba(22, 28, 22, 0.95) !important;
+  border: 1px solid rgba(120, 184, 90, 0.4) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  color: #F8F6F0 !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.55), 0 0 20px rgba(120, 184, 90, 0.15) !important;
+  opacity: 0 !important;
+  transform: translate(-50%, 24px) scale(.96) !important;
+  transition: opacity var(--motion-normal) ease, transform var(--motion-normal) var(--motion-ease) !important;
+}
+.cart-toast.show { opacity: 1 !important; transform: translate(-50%, 0) scale(1) !important; }
+.toast-check-icon { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: rgba(120, 184, 90, 0.25); color: #78B85A; font-weight: 800; }
+
+/* Forms, drawers and modals */
+.form-input,
+.form-textarea { transition: transform var(--motion-fast) var(--motion-ease), border-color var(--motion-fast) ease, box-shadow var(--motion-fast) ease, background-color var(--motion-fast) ease !important; }
+.form-input:focus,
+.form-textarea:focus { transform: translateY(-1px); }
+#cart-drawer { transition: transform 460ms var(--motion-ease) !important; }
+#cart-overlay,
+#mobile-overlay,
+#wa-not-configured-modal { transition: opacity var(--motion-normal) ease !important; }
+#wa-not-configured-modal .modal-box { opacity: 0; transform: translateY(18px) scale(.97); transition: opacity var(--motion-normal) ease, transform var(--motion-normal) var(--motion-ease); }
+#wa-not-configured-modal.active .modal-box { opacity: 1; transform: translateY(0) scale(1); }
+
+@media (max-width: 768px) {
+  .page-intro-mark img { width: 50px; height: 50px; }
+  .call-btn-mobile { display: none !important; }
+  .motion-ready .motion-reveal[data-motion] { transform: translateY(18px); }
+  .bistro-dish:hover,
+  .menu-card.catalog-menu-card:hover,
+  .extras-card-grid .extra-row:hover,
+  .drink-row:hover { transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .page-intro { display: none; }
+  .reading-progress { animation: none; transform: scaleX(0); }
+  .motion-ready .motion-reveal,
+  .motion-ready .motion-reveal[data-motion] { opacity: 1; transform: none; transition: opacity 150ms ease; }
+  .bistro-hero-copy h1,
+  .bistro-hero-copy > p,
+  .bistro-hero-actions,
+  .bistro-hero-details,
+  .bistro-hero-photo,
+  #mobile-menu.open *,
+  .cart-feedback,
+  .catalog-cart-item,
+  .cart-item,
+  .menu-tab-btn.active,
+  .filter-btn.active { animation: none !important; }
+  .click-ripple,
+  .fly-plus-one { display: none; }
+  *, *::before, *::after { scroll-behavior: auto !important; }
+}
+
+@media print { .page-intro, .reading-progress { display: none !important; } }

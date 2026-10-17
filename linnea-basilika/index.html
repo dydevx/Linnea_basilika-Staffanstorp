@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="sv" itemscope itemtype="https://schema.org/Restaurant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script>document.documentElement.classList.add("js");</script>
+
+  <!-- SEO Meta -->
+  <title>Linnea & Basilika Staffanstorp - Asiatisk restaurang | Sushi, Thai, Bowls</title>
+  <meta name="description" content="Linnea & Basilika i Staffanstorp erbjuder autentisk asiatisk mat: Pad Thai, Thai Curry, Sushi och Bowls. Öppet måndag-söndag 11-21. Beställ takeaway via WhatsApp." />
+  <meta name="keywords" content="Linnea Basilika Staffanstorp, asiatisk restaurang Staffanstorp, thai mat Staffanstorp, sushi Staffanstorp, takeaway Staffanstorp, asian food Staffanstorp" />
+  <meta name="author" content="Linnea & Basilika Staffanstorp" />
+  <link rel="canonical" href="https://linnea-basilika.se/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="Linnea & Basilika Staffanstorp - Asiatisk restaurang" />
+  <meta property="og:description" content="Autentisk asiatisk mat i hjärtat av Staffanstorp. Thai, Sushi & Bowls. Öppet alla dagar 11-21." />
+  <meta property="og:url" content="https://linnea-basilika.se/" />
+  <meta property="og:locale" content="sv_SE" />
+
+  <!-- Favicon (SVG inline) -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="mask-icon" href="assets/favicon.svg" color="#34472f" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Linnea & Basilika Staffanstorp",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Handelsvägen 38",
+      "postalCode": "245 34",
+      "addressLocality": "Staffanstorp",
+      "addressCountry": "SE"
+    },
+    "telephone": "+4646399888",
+    "openingHours": "Mo-Su 11:00-21:00",
+    "servesCuisine": ["Thai", "Japanese", "Asian Fusion"],
+    "hasMap": "https://maps.app.goo.gl/WmcdJfUKPup41jJ58",
+    "priceRange": "$$",
+    "currenciesAccepted": "SEK"
+  }
+  </script>
+
+  <!-- Preload critical font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/cinematic.css" />
+  <link rel="stylesheet" href="css/effects.css" />
+  <meta name="theme-color" content="#111310" />
+</head>
+
+<body>
+<div class="ambient-glow-wrapper" aria-hidden="true">
+  <div class="ambient-orb ambient-orb-1"></div>
+  <div class="ambient-orb ambient-orb-2"></div>
+  <div class="ambient-orb ambient-orb-3"></div>
+</div>
+
+<div class="page-intro" aria-hidden="true">
+  <div class="page-intro-panel page-intro-panel-left"></div>
+  <div class="page-intro-panel page-intro-panel-right"></div>
+  <div class="page-intro-mark">
+    <img src="assets/favicon.svg" alt="" width="58" height="58" />
+    <span>Linnea &amp; Basilika</span>
+    <small>Staffanstorp</small>
+  </div>
+</div>
+
+<div id="dish-modal" class="dish-modal" role="dialog" aria-modal="true" aria-labelledby="dish-modal-title" hidden>
+  <div class="dish-modal-backdrop" data-close-dish-modal></div>
+  <div class="dish-modal-panel">
+    <button class="dish-modal-close" type="button" data-close-dish-modal aria-label="Stäng rättens detaljer">Stäng</button>
+    <figure><img id="dish-modal-image" src="" alt=""></figure>
+    <div class="dish-modal-copy">
+      <span id="dish-modal-code" class="dish-modal-code"></span>
+      <h2 id="dish-modal-title"></h2>
+      <p id="dish-modal-description"></p>
+      <div id="dish-modal-spicy"></div>
+      <div class="dish-modal-purchase">
+        <strong id="dish-modal-price"></strong>
+        <div class="dish-quantity" aria-label="Antal"><button type="button" data-dish-qty="-1">−</button><span id="dish-modal-quantity">1</span><button type="button" data-dish-qty="1">+</button></div>
+      </div>
+      <button id="dish-modal-add" class="btn-submit-order" type="button">Lägg till i varukorgen</button>
+    </div>
+  </div>
+</div>
+
+<div id="gallery-lightbox" class="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Förstorad matbild" hidden>
+  <button type="button" class="gallery-lightbox-close" aria-label="Stäng bild">Stäng</button>
+  <img src="" alt="">
+</div>
+<div class="reading-progress" aria-hidden="true"></div>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav id="main-nav" role="navigation" aria-label="Huvudnavigation">
+  <div class="nav-inner">
+    <a href="#welcome" class="nav-logo" aria-label="Linnea & Basilika - Startsida">
+      <span class="nav-logo-text">
+        <span class="logo-main">Linnea & Basilika</span>
+        <span class="logo-sub">Staffanstorp</span>
+      </span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#welcome" class="nav-link active">Hem</a></li>
+      <li><a href="#menu" class="nav-link">Meny</a></li>
+      <li><a href="#menu" class="nav-link" data-menu-jump="sushi">Sushi &amp; Bowls</a></li>
+      <li><a href="#om-oss" class="nav-link">Om oss</a></li>
+      <li><a href="#boka-bord" class="nav-link">Boka bord</a></li>
+      <li><a href="#hitta-hit" class="nav-link">Kontakt</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#menu-cart" class="btn-order" aria-label="Visa varukorgen">Beställ mat <span class="cart-count" data-cart-count>0</span></a>
+      <a href="tel:+4646399888" class="call-btn-mobile" aria-label="Ring restaurangen">046</a>
+      <button class="hamburger" id="hamburger" aria-label="Öppna meny" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div id="mobile-overlay" aria-hidden="true"></div>
+<div id="mobile-menu" role="dialog" aria-label="Mobilmeny" aria-modal="true">
+  <div class="mobile-menu-header"><button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Stäng meny">Stäng</button></div>
+  <ul class="mobile-nav-links" role="list">
+    <li><a href="#welcome" class="mobile-nav-link">Hem</a></li>
+    <li><a href="#menu" class="mobile-nav-link">Meny</a></li>
+    <li><a href="#menu" class="mobile-nav-link" data-menu-jump="sushi">Sushi &amp; Bowls</a></li>
+    <li><a href="#om-oss" class="mobile-nav-link">Om oss</a></li>
+    <li><a href="#boka-bord" class="mobile-nav-link">Boka bord</a></li>
+    <li><a href="#hitta-hit" class="mobile-nav-link">Kontakt</a></li>
+  </ul>
+  <div class="mobile-menu-actions"><a href="#menu" class="mobile-btn-order">Beställ mat</a><a href="tel:+4646399888" class="mobile-btn-call">Ring oss - 046-39 98 88</a></div>
+  <div class="mobile-menu-info"><p><strong>Handelsvägen 38, Staffanstorp</strong></p><p><strong>Måndag-Söndag: 11.00-21.00</strong></p><p>Alla priser gäller vid take away</p></div>
+</div>
+<!-- ============================================================
+     TEXT-FIRST MENU CATALOG
+     ============================================================ -->
+<main>
+<section id="welcome" class="bistro-hero cinematic-hero" aria-labelledby="welcome-heading">
+  <div class="bistro-hero-copy">
+    <span class="hero-kicker"><i class="fa-solid fa-pepper-hot" aria-hidden="true"></i> ASIATISKA SMAKER • STAFFANSTORP</span>
+    <h1 id="welcome-heading">Smaker från Asien <em>– mitt i Staffanstorp</em></h1>
+    <p>Upptäck en värld av asiatiska smaker med smakrika thailändska rätter, sushi och fräscha bowls.</p>
+    <div class="bistro-hero-actions">
+      <a class="btn-hero-primary bistro-button" href="#menu">Utforska menyn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      <button class="btn-hero-secondary" type="button" onclick="openWhatsAppDirect()"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Beställ via WhatsApp</button>
+      <a class="btn-hero-tertiary bistro-text-link" href="#boka-bord">Boka bord <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <figure class="bistro-hero-photo">
+    <img src="assets/images/generated/hero-pad-thai.png" alt="Pad Thai med räkor, lime, jordnötter och färska örter på ett mörkt stenbord" width="1536" height="1024" fetchpriority="high" />
+    <figcaption>Pad Thai <span>från köket</span></figcaption>
+    <div class="hero-floating-badge badge-top-left" aria-hidden="true">
+      <div class="badge-icon"><i class="fa-solid fa-leaf"></i></div>
+      <div class="badge-text">
+        <strong>100% Färska råvaror</strong>
+        <span>Tillagas på beställning</span>
+      </div>
+    </div>
+    <div class="hero-floating-badge badge-bottom-right" aria-hidden="true">
+      <div class="badge-rating-stars">★★★★★</div>
+      <div class="badge-text">
+        <strong>4.8 / 5 i betyg</strong>
+        <span>Gästernas favorit</span>
+      </div>
+    </div>
+  </figure>
+</section>
+<div class="bistro-address-strip">
+  <span><i class="fa-solid fa-location-dot" style="color:var(--cinema-orange);margin-right:6px;" aria-hidden="true"></i> Handelsvägen 38, Staffanstorp</span>
+  <span><i class="fa-regular fa-clock" style="color:var(--cinema-basil);margin-right:6px;" aria-hidden="true"></i> Öppet alla dagar: 11.00–21.00</span>
+  <a href="tel:+4646399888"><i class="fa-solid fa-phone" style="color:var(--cinema-orange);margin-right:6px;" aria-hidden="true"></i> 046-39 98 88 <span aria-hidden="true">↗</span></a>
+</div>
+<section class="signature-showcase container" aria-labelledby="discover-heading">
+  <div class="signature-heading"><h2 id="discover-heading">Signatur<span>rätter</span></h2><p>Sex favoriter som fångar vårt kök, från hetta och örter till grillad lax och krämig curry.</p></div>
+  <div id="signature-grid" class="signature-grid" aria-live="polite"></div>
+</section>
+<section id="menu" class="menu-catalog" aria-labelledby="menu-heading">
+  <div class="container catalog-container">
+    <div class="catalog-heading">
+      <h2 class="catalog-title" id="menu-heading">Välj något <em>gott.</em></h2>
+      <p class="catalog-intro">Bläddra bland våra rätter, se priset direkt och lägg till dina favoriter. Alla priser gäller vid take away.</p>
+    </div>
+    <div class="catalog-toolbar">
+      <div class="menu-tabs" role="tablist" aria-label="Välj meny">
+        <button class="menu-tab-btn active" id="thai-tab" data-tab="thai" role="tab" aria-selected="true" aria-controls="thai-menu-container"><i class="fa-solid fa-bowl-food" aria-hidden="true"></i>Thai &amp; asiatiskt</button>
+        <button class="menu-tab-btn" id="sushi-tab" data-tab="sushi" role="tab" aria-selected="false" aria-controls="sushi-menu-container"><i class="fa-solid fa-fish" aria-hidden="true"></i>Sushi &amp; bowls</button>
+      </div>
+      <label class="menu-search-wrap"><span class="sr-only">Sök rätt eller nummer</span><svg class="menu-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input type="search" id="menu-search" placeholder="Sök rätt eller nummer" aria-label="Sök rätt eller nummer" autocomplete="off" /></label>
+    </div>
+    <div class="catalog-layout">
+      <div class="catalog-results">
+        <div class="menu-collection" id="menu-collection">
+          <div class="menu-collection-copy">
+            <div class="menu-brand-lockup"><img src="assets/favicon.svg" alt="" width="48" height="48" /><span><strong>Linnea &amp; Basilika</strong><small>Staffanstorp · Take away</small></span></div>
+            <h3 id="menu-collection-title">Thai &amp; asiatiskt</h3>
+            <p id="menu-collection-description">Från doftande curry till wok och Pad Thai. Hitta din favorit.</p>
+            <span class="menu-takeaway-note"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> Alla priser gäller take away</span>
+          </div>
+          <figure><img id="menu-collection-image" src="assets/images/ai/green-curry.png" alt="AI-illustration av thaicurry" width="1536" height="1024" loading="lazy" /><figcaption>AI-illustration</figcaption></figure>
+        </div>
+        <div class="menu-browse-bar"><label for="menu-category">Välj kategori<select id="menu-category"><option value="all">Alla kategorier</option></select></label><p id="menu-result-count" role="status" aria-live="polite" aria-atomic="true"></p></div>
+        <div id="menu-filter-bar" class="catalog-filters" role="group" aria-label="Filtrera efter kategori"></div>
+        <div id="menu-empty-state" hidden role="status"><h3>Inga rätter hittades</h3><p>Prova ett annat sökord eller visa hela menyn.</p><button type="button" id="reset-menu-filters" class="bistro-text-link">Visa alla rätter</button></div>
+        <div id="thai-menu-container" role="tabpanel" aria-labelledby="thai-tab"></div>
+        <div id="sushi-menu-container" role="tabpanel" aria-labelledby="sushi-tab" hidden></div>
+      </div>
+      <aside id="menu-cart" class="catalog-cart" aria-labelledby="catalog-cart-heading">
+        <h2 id="catalog-cart-heading">Din varukorg</h2>
+        <p class="catalog-cart-intro">Det du väljer samlas här.</p>
+        <div id="catalog-cart-items" class="catalog-cart-items" aria-live="polite"><p class="catalog-empty">Inga rätter ännu</p></div>
+        <div class="catalog-cart-total"><span>Totalt</span><strong id="catalog-cart-total">0 kr</strong></div>
+        <a href="#bestall" class="catalog-checkout">Fortsätt till beställning</a>
+        <p class="catalog-cart-note">Upphämtning · Öppet alla dagar 11-21</p>
+      </aside>
+    </div>
+  </div>
+</section>
+<button type="button" class="mobile-cart-bar open-cart-btn" aria-label="Öppna din varukorg"><span class="mobile-cart-count" data-cart-count>0</span><span>Visa varukorg</span><strong data-cart-total>0 kr</strong><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></button>
+<!-- ============================================================
+     ORDERING SECTION
+     ============================================================ -->
+<section id="bestall" aria-labelledby="bestall-heading">
+  <div class="container">
+    <div class="reveal">
+      
+      <h2 class="section-title" id="bestall-heading">Din beställning</h2>
+      <p class="section-subtitle">Fyll i dina uppgifter och skicka din beställning direkt via WhatsApp. Restaurangen bekräftar din bestellung och upphämtningstid.</p>
+    </div>
+
+    <div class="order-layout" style="margin-top:48px;">
+      <!-- Form -->
+      <div class="order-form-card reveal">
+        <h3 class="form-title">Skicka beställning</h3>
+
+        <form id="order-form" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="customer-name">Namn <span aria-label="obligatoriskt">*</span></label>
+            <input class="form-input" type="text" id="customer-name" name="customer-name" placeholder="Ditt namn" required autocomplete="name" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="customer-phone">Telefonnummer <span aria-label="obligatoriskt">*</span></label>
+            <input class="form-input" type="tel" id="customer-phone" name="customer-phone" placeholder="07X XXX XX XX" required autocomplete="tel" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="pickup-time">Önskad upphämtningstid <span aria-label="obligatoriskt">*</span></label>
+            <input class="form-input" type="text" id="pickup-time" name="pickup-time" placeholder="T.ex. 18.30" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="comment">Kommentar</label>
+            <textarea class="form-textarea" id="comment" name="comment" placeholder="T.ex. ingen extra chili, extra ris..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="allergies">Allergier eller specialönskemål</label>
+            <textarea class="form-textarea" id="allergies" name="allergies" placeholder="Ange eventuella allergier eller specialönskemål"></textarea>
+          </div>
+
+          <div class="form-total">
+            <span class="form-total-label">Totalt att betala:</span>
+            <span class="form-total-amount" id="order-form-total">0 kr</span>
+          </div>
+
+          <button type="submit" class="btn-submit-order">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Skicka beställning via WhatsApp
+          </button>
+
+          <div id="order-sent-hint" role="alert">
+            <strong>WhatsApp öppnas nu!</strong><br>
+            Tryck på <strong>"Skicka"</strong> i WhatsApp för att slutföra beställningen.<br>
+            Restaurangen bekräftar din beposition och upphämtningstid. Din varukorg sparas tills du själv tömmer den.
+          </div>
+        </form>
+      </div>
+
+      <!-- Cart preview -->
+      <div class="cart-preview-card reveal">
+        <h3 class="cart-preview-title">
+          Varukorg
+          <button class="open-cart-btn" onclick="openCart()" style="font-size:0.75rem; color:var(--accent-orange); margin-left:auto;">Redigera</button>
+        </h3>
+        <div id="cart-preview-content">
+          <div class="cart-empty-small">
+            Din varukorg är tom.<br>
+            Lägg till rätter från menyn ovan.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT – OM OSS
+     ============================================================ -->
+<section id="om-oss" aria-labelledby="about-heading">
+  <div class="container about-editorial">
+    <div class="about-title reveal"><h2 class="section-title" id="about-heading">Mat som förenar smaker och människor.</h2></div>
+    <figure class="about-portrait reveal"><img src="assets/images/generated/chicken-satay.png" alt="Grillade kycklingspett med jordnötssås" width="1024" height="1536" loading="lazy"></figure>
+    <div class="about-copy reveal">
+      <p>Hos Linnea &amp; Basilika i Staffanstorp möts aromatiska curryrätter, smakrik Pad Thai, sushi och fräscha bowls.</p>
+      <p>Menyn är skapad för både en snabb takeaway och en god stund tillsammans vid bordet.</p>
+      <p class="takeaway-note">Alla priser i menyn gäller vid take away. Meddela oss om allergier eller andra önskemål när du beställer.</p>
+    </div>
+    <figure class="about-landscape reveal"><img src="assets/images/generated/dragon-grill-roll.png" alt="Dragon Grill Roll med grillad lax och avokado" width="1536" height="1024" loading="lazy"></figure>
+  </div>
+</section>
+
+<section id="galleri" class="food-gallery" aria-labelledby="gallery-heading">
+  <div class="container">
+    <h2 id="gallery-heading">Smaker i närbild.</h2>
+    <div class="gallery-bento">
+      <button class="gallery-tile gallery-tile-wide" type="button" data-lightbox-src="assets/images/generated/hero-pad-thai.png"><img src="assets/images/generated/hero-pad-thai.png" alt="Pad Thai med räkor" loading="lazy"></button>
+      <button class="gallery-tile gallery-tile-tall" type="button" data-lightbox-src="assets/images/generated/chicken-satay.png"><img src="assets/images/generated/chicken-satay.png" alt="Kycklingspett med jordnötssås" loading="lazy"></button>
+      <button class="gallery-tile" type="button" data-lightbox-src="assets/images/ai/green-curry.png"><img src="assets/images/ai/green-curry.png" alt="Grön curry med jasminris" loading="lazy"></button>
+      <button class="gallery-tile gallery-tile-wide" type="button" data-lightbox-src="assets/images/generated/dragon-grill-roll.png"><img src="assets/images/generated/dragon-grill-roll.png" alt="Dragon Grill Roll" loading="lazy"></button>
+      <button class="gallery-tile" type="button" data-lightbox-src="assets/images/ai/sushi-bowl.png"><img src="assets/images/ai/sushi-bowl.png" alt="Sushi bowl med lax och avokado" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BOOKING – BOKA BORD
+     ============================================================ -->
+<section id="boka-bord" aria-labelledby="booking-heading">
+  <div class="container">
+    <div class="booking-layout" style="margin-top:48px;">
+      <div class="booking-info booking-visual reveal">
+        <img src="assets/images/generated/restaurant-interior.png" alt="Stämningsfull restaurangmiljö med dukat bord" width="1536" height="1024" loading="lazy">
+        <div class="booking-visual-copy"><h2 class="section-title" id="booking-heading">En plats för goda stunder.</h2><p>Boka bord och njut av en härlig matupplevelse hos oss.</p></div>
+
+        <div class="booking-points">
+          <div class="booking-point">
+            <span class="booking-point-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg></span>
+            <div>
+              <strong>Välj datum och tid</strong>
+              <span>Vi är öppna måndag-söndag 11.00-21.00</span>
+            </div>
+          </div>
+          <div class="booking-point">
+            <span class="booking-point-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8A8.5 8.5 0 0 1 12.5 20a8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7A8.4 8.4 0 0 1 4 11.5 8.5 8.5 0 0 1 8.7 3.9a8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></svg></span>
+            <div>
+              <strong>Skicka via WhatsApp</strong>
+              <span>Din förfrågan skickas direkt till restaurangen</span>
+            </div>
+          </div>
+          <div class="booking-point">
+            <span class="booking-point-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span>
+            <div>
+              <strong>Vänta på bekräftelse</strong>
+              <span>Bordet är inte bokat förrän restaurangen svarat</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:28px; padding:16px 20px; background:rgba(232,117,54,0.06); border:1px solid var(--border-orange); border-radius:var(--radius); font-size:0.85rem; color:var(--text-secondary); line-height:1.7;" role="note">
+          <strong style="color:var(--accent-orange); display:block; margin-bottom:4px;">Observera</strong>
+          Din bokning är inte bekräftad förrän restaurangen har svarat på din förfrågan. Vid allergi eller specialönskemål, ange detta i kommentarsfältet.
+        </div>
+      </div>
+
+      <div class="booking-form-card reveal">
+        <h3 class="form-title"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg> Bokningsförfrågan</h3>
+
+        <form id="booking-form" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="booking-name">Namn <span aria-label="obligatoriskt">*</span></label>
+            <input class="form-input" type="text" id="booking-name" name="booking-name" placeholder="Ditt namn" required autocomplete="name" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="booking-phone">Telefonnummer <span aria-label="obligatoriskt">*</span></label>
+            <input class="form-input" type="tel" id="booking-phone" name="booking-phone" placeholder="07X XXX XX XX" required autocomplete="tel" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="booking-date">Datum <span aria-label="obligatoriskt">*</span></label>
+              <input class="form-input" type="date" id="booking-date" name="booking-date" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="booking-time">Tid <span aria-label="obligatoriskt">*</span></label>
+              <input class="form-input" type="time" id="booking-time" name="booking-time" min="11:00" max="21:00" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="booking-guests">Antal personer <span aria-label="obligatoriskt">*</span></label>
+            <input class="form-input" type="number" id="booking-guests" name="booking-guests" min="1" max="20" placeholder="T.ex. 4" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="booking-wishes">Önskemål</label>
+            <textarea class="form-textarea" id="booking-wishes" name="booking-wishes" placeholder="T.ex. ett bord nära fönstret, barnstol behövs..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit-booking">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Skicka bokningsförfrågan
+          </button>
+
+          <div id="booking-unconfirmed-notice" role="alert">
+            <strong>Din förfrågan har skickats via WhatsApp!</strong>
+            Din bokning är <strong>inte bekräftad</strong> förrän restaurangen har svarat på din förfrågan. Vänligen vänta på ett svar från Linnea & Basilika.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LOCATION – HITTA HIT
+     ============================================================ -->
+<section id="hitta-hit" aria-labelledby="location-heading">
+  <div class="container">
+    <div class="reveal">
+      
+      <h2 class="section-title" id="location-heading">Hitta till oss</h2>
+    </div>
+
+    <div class="location-layout" style="margin-top:48px;">
+      <div class="location-info reveal">
+        <div class="location-detail" itemscope itemtype="https://schema.org/PostalAddress">
+          <div class="location-detail-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <div class="location-detail-label">Adress</div>
+            <div class="location-detail-value">
+              <span itemprop="streetAddress">Handelsvägen 38</span><br>
+              <span itemprop="postalCode">245 34</span> <span itemprop="addressLocality">Staffanstorp</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-detail">
+          <div class="location-detail-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <div>
+            <div class="location-detail-label">Öppettider</div>
+            <div class="location-detail-value" itemprop="openingHours" content="Mo-Su 11:00-21:00">
+              Måndag-Söndag: <strong>11.00-21.00</strong><br>
+              <small style="color:var(--text-muted)">Öppet alla dagar i veckan</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-detail">
+          <div class="location-detail-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1z"/></svg></div>
+          <div>
+            <div class="location-detail-label">Telefon</div>
+            <div class="location-detail-value">
+              <a href="tel:+4646399888" itemprop="telephone">046-39 98 88</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-actions">
+          <a href="https://maps.app.goo.gl/WmcdJfUKPup41jJ58" target="_blank" rel="noopener noreferrer" class="btn-map">
+            Visa vägbeskrivning
+          </a>
+          <a href="tel:+4646399888" class="btn-call">
+            Ring oss
+          </a>
+          <a href="#boka-bord" class="btn-secondary" style="padding:12px 20px; font-size:0.875rem; border-radius:100px;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg> Boka bord
+          </a>
+        </div>
+      </div>
+
+      <div class="map-wrap reveal">
+        <div class="map-placeholder" id="map-placeholder">
+          <p>Klicka för att ladda kartan</p>
+          <button id="load-map-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Visa karta
+          </button>
+        </div>
+        <div id="map-container" style="display:none"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+</main>
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div>
+        <a href="#menu" class="nav-logo" style="margin-bottom:0">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40" aria-hidden="true">
+            <rect width="44" height="44" rx="10" fill="#1D211B"/>
+            <text x="22" y="32" font-size="26" text-anchor="middle" fill="#78B85A" font-family="Georgia,serif" font-weight="bold">B</text>
+            <rect x="2" y="2" width="40" height="40" rx="9" stroke="#78B85A" stroke-width="1.5" stroke-opacity="0.4"/>
+          </svg>
+          <div class="nav-logo-text">
+            <span class="logo-main">Linnea & Basilika</span>
+            <span class="logo-sub">Staffanstorp</span>
+          </div>
+        </a>
+        <p class="footer-brand-desc">
+          Asiatisk restaurang i hjärtat av Staffanstorp. Autentiska smaker från Thailand och Japan: curries, Pad Thai, sushi och bowls.
+        </p>
+      </div>
+
+      <!-- Quick links -->
+      <div>
+        <h3 class="footer-col-title">Snabblänkar</h3>
+        <ul class="footer-links">
+          <li><a href="#menu" class="footer-link">Hem</a></li>
+          <li><a href="#menu" class="footer-link">Meny</a></li>
+          <li><a href="#menu" class="footer-link">Sushi & Bowls</a></li>
+          <li><a href="#om-oss" class="footer-link">Om oss</a></li>
+          <li><a href="#boka-bord" class="footer-link">Boka bord</a></li>
+          <li><a href="#hitta-hit" class="footer-link">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="footer-col-title">Kontakt</h3>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Handelsvägen 38<br>245 34 Staffanstorp</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.94a19.79 19.79 0 01-3.07-8.64A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+          <a href="tel:+4646399888">046-39 98 88</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Måndag-Söndag<br>11.00-21.00</span>
+        </div>
+      </div>
+
+      <!-- Actions -->
+      <div>
+        <h3 class="footer-col-title">Beställning</h3>
+        <button onclick="openWhatsAppDirect()" class="footer-action-link green">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8A8.5 8.5 0 0 1 12.5 20a8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7A8.4 8.4 0 0 1 4 11.5 8.5 8.5 0 0 1 8.7 3.9a8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></svg> Beställ via WhatsApp
+        </button>
+        <a href="#boka-bord" class="footer-action-link">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg> Boka bord
+        </a>
+        <a href="https://maps.app.goo.gl/WmcdJfUKPup41jJ58" target="_blank" rel="noopener noreferrer" class="footer-action-link">
+          Hitta hit
+        </a>
+        <a href="tel:+4646399888" class="footer-action-link">
+          Ring oss
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Linnea & Basilika Staffanstorp. Alla rättigheter förbehållna.</p>
+      <p class="footer-credit"><span class="credit-mark" aria-hidden="true">HC</span><span class="credit-copy">Webbdesign av <strong>HoangCaster</strong></span><svg class="credit-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></svg></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     FLOATING ELEMENTS
+     ============================================================ -->
+
+<!-- Back to Top Button -->
+<button id="back-to-top" class="back-to-top-btn" aria-label="Tillbaka till toppen">
+  <svg class="progress-ring" width="48" height="48" viewBox="0 0 48 48">
+    <circle class="progress-ring-bg" stroke="rgba(255, 255, 255, 0.1)" stroke-width="3" fill="transparent" r="20" cx="24" cy="24"/>
+    <circle class="progress-bar" stroke="#E87536" stroke-width="3" stroke-linecap="round" fill="transparent" r="20" cx="24" cy="24"/>
+  </svg>
+  <span class="back-to-top-arrow"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></span>
+</button>
+
+<!-- WhatsApp FAB -->
+<button class="wa-fab" onclick="openWhatsAppDirect()" aria-label="Kontakta oss via WhatsApp">
+  <span class="wa-fab-pulse"></span>
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-fab-tooltip">Chatta / Beställ via WhatsApp</span>
+</button>
+
+<!-- Call FAB (mobile) -->
+<a href="tel:+4646399888" class="call-fab" aria-label="Ring restaurangen"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1z"/></svg></a>
+
+<!-- ============================================================
+     CART DRAWER
+     ============================================================ -->
+<div id="cart-overlay" aria-hidden="true"></div>
+
+<div id="cart-drawer" role="dialog" aria-modal="true" aria-label="Varukorg">
+  <div class="cart-drawer-header">
+    <h2 class="cart-drawer-title">
+      Varukorg
+    </h2>
+    <button class="cart-close-btn" id="close-cart" aria-label="Stäng varukorg">✕</button>
+  </div>
+
+  <!-- Empty state -->
+  <div id="cart-empty">
+    <p>Din varukorg är tom</p>
+    <p style="font-size:0.8rem;">Lägg till rätter från menyn för att komma igång!</p>
+  </div>
+
+  <!-- Cart content -->
+  <div id="cart-content" style="display:none">
+    <div id="cart-items" aria-live="polite" aria-label="Varor i korgen">
+      <!-- Rendered by JavaScript -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span class="cart-total-label">Totalt:</span>
+        <span id="cart-total-amount">0 kr</span>
+      </div>
+
+      <a href="#bestall" class="cart-checkout-btn" onclick="closeCartDrawer()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Gå till beställning
+      </a>
+
+      <button class="cart-clear-btn" onclick="if(confirm('Töm varukorgen?')) clearCart()" aria-label="Töm varukorgen">
+        Töm varukorg
+      </button>
+
+      <p class="cart-note">Alla priser gäller vid take away</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     WHATSAPP NOT CONFIGURED MODAL
+     ============================================================ -->
+<div id="wa-not-configured-modal" role="dialog" aria-modal="true" aria-label="WhatsApp inte konfigurerat" aria-live="assertive">
+  <div class="modal-box">
+    <button class="modal-close" aria-label="Stäng">✕</button>
+    <div class="modal-icon" aria-hidden="true">⚙️</div>
+    <h2 class="modal-title">WhatsApp-nummer ej konfigurerat</h2>
+    <p class="modal-body">
+      WhatsApp-beställning är inte aktiverat ännu. Vänligen ring oss direkt för att beställa mat eller boka bord.<br><br>
+      <strong>046-39 98 88</strong><br>
+      <small>Öppet: Måndag-Söndag 11.00-21.00</small>
+    </p>
+    <a href="tel:+4646399888" class="modal-call-btn">
+      Ring oss nu
+    </a>
+  </div>
+</div>
+
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+<script src="js/config.js"></script>
+<script src="js/menu-data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/whatsapp.js"></script>
+<script src="js/script.js"></script>
+<script src="js/cinematic.js"></script>
+
+<script>
+// Extra init helpers
+function openWhatsAppDirect() {
+  const msg = `Hej Linnea & Basilika!\n\nJag vill gärna beställa / boka ett bord. Kan ni hjälpa mig?\n\nTack!`;
+  openWhatsApp(msg);
+}
+
+// Update order form total dynamically
+setInterval(() => {
+  const el = document.getElementById("order-form-total");
+  if (el) el.textContent = `${getCartTotal()} kr`;
+
+  // Cart preview in order section
+  const preview = document.getElementById("cart-preview-content");
+  if (preview) {
+    if (cart.length === 0) {
+      preview.innerHTML = '<div class="cart-empty-small">Din varukorg är tom.<br>Lägg till rätter från menyn ovan.</div>';
+    } else {
+      preview.innerHTML = `
+        <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px;">
+          ${cart.map(item => `
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:0.8rem;">
+              <span style="color:var(--text-secondary);flex:1;margin-right:8px;">${item.name} ×${item.quantity}</span>
+              <span style="color:var(--accent-orange);font-weight:700;white-space:nowrap;">${item.price * item.quantity} kr</span>
+            </div>
+          `).join("")}
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:rgba(232,117,54,0.08);border:1px solid var(--border-orange);border-radius:8px;">
+          <span style="font-weight:600;">Totalt</span>
+          <span style="font-size:1.2rem;font-weight:800;color:var(--accent-orange);">${getCartTotal()} kr</span>
+        </div>
+      `;
+    }
+  }
+
+  // Show/hide map
+  const mapContainer = document.getElementById("map-container");
+  const mapPlaceholder = document.getElementById("map-placeholder");
+  if (mapContainer && mapContainer.querySelector("iframe")) {
+    if (mapPlaceholder) mapPlaceholder.style.display = "none";
+    mapContainer.style.display = "block";
+  }
+}, 300);
+
+// Map load button wires up after iframe is inserted
+document.addEventListener("DOMContentLoaded", () => {
+  const loadBtn = document.getElementById("load-map-btn");
+  if (loadBtn) {
+    loadBtn.addEventListener("click", () => {
+      const container = document.getElementById("map-container");
+      const placeholder = document.getElementById("map-placeholder");
+      const iframe = document.createElement("iframe");
+      iframe.src = CONFIG.GOOGLE_MAPS_EMBED;
+      iframe.width = "100%";
+      iframe.height = "100%";
+      iframe.style.border = "0";
+      iframe.loading = "lazy";
+      iframe.referrerPolicy = "no-referrer-when-downgrade";
+      iframe.title = "Karta - Linnea & Basilika Staffanstorp";
+      iframe.allowFullscreen = true;
+      if (placeholder) placeholder.style.display = "none";
+      if (container) {
+        container.style.display = "block";
+        container.appendChild(iframe);
+      }
+    });
+  }
+});
+</script>
+
+</body>
+</html>

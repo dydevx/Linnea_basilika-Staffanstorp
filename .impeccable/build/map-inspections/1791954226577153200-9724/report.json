@@ -1,0 +1,3389 @@
+{
+  "tool": "comp-spec inspect-map",
+  "version": 1,
+  "referenceOnly": true,
+  "stateChanged": false,
+  "comp": ".impeccable/mocks/menu-catalog-left.png",
+  "compSize": {
+    "width": 1440,
+    "height": 1000
+  },
+  "inputRegionCount": 61,
+  "regions": [
+    {
+      "id": "navigation-surface",
+      "kind": "chrome",
+      "note": "Dark navigation bar with a thin lower rule.",
+      "grid": null,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.072
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 72
+      },
+      "aspect": 20,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.9392
+        },
+        {
+          "hex": "#e87838",
+          "coverage": 0.0433
+        },
+        {
+          "hex": "#f6f8f8",
+          "coverage": 0.0095
+        },
+        {
+          "hex": "#a8a8a8",
+          "coverage": 0.0045
+        },
+        {
+          "hex": "#585858",
+          "coverage": 0.0035
+        }
+      ],
+      "detail": {
+        "energy": 15.5849
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 1,
+      "cropPath": "region-1.png"
+    },
+    {
+      "id": "brand-name",
+      "kind": "text",
+      "note": "Linnea & Basilika brand name.",
+      "grid": null,
+      "box": {
+        "x": 0.0486,
+        "y": 0.016,
+        "w": 0.1042,
+        "h": 0.024
+      },
+      "px": {
+        "x": 70,
+        "y": 16,
+        "w": 150,
+        "h": 24
+      },
+      "aspect": 6.25,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.7324
+        },
+        {
+          "hex": "#f7f8f6",
+          "coverage": 0.1676
+        },
+        {
+          "hex": "#18a8c8",
+          "coverage": 0.0432
+        },
+        {
+          "hex": "#f8e4ad",
+          "coverage": 0.0351
+        },
+        {
+          "hex": "#d8a818",
+          "coverage": 0.0216
+        }
+      ],
+      "detail": {
+        "energy": 59.2587
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 2,
+      "cropPath": "region-2.png"
+    },
+    {
+      "id": "brand-location",
+      "kind": "text",
+      "note": "Small uppercase Staffanstorp wordmark.",
+      "grid": null,
+      "box": {
+        "x": 0.0486,
+        "y": 0.04,
+        "w": 0.0833,
+        "h": 0.015
+      },
+      "px": {
+        "x": 70,
+        "y": 40,
+        "w": 120,
+        "h": 15
+      },
+      "aspect": 8,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.7553
+        },
+        {
+          "hex": "#a8a894",
+          "coverage": 0.1011
+        },
+        {
+          "hex": "#5a8992",
+          "coverage": 0.0745
+        },
+        {
+          "hex": "#185373",
+          "coverage": 0.0372
+        },
+        {
+          "hex": "#859b73",
+          "coverage": 0.0319
+        }
+      ],
+      "detail": {
+        "energy": 24.8031
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 3,
+      "cropPath": "region-3.png"
+    },
+    {
+      "id": "nav-menu",
+      "kind": "text",
+      "note": "Active menu navigation link.",
+      "grid": null,
+      "box": {
+        "x": 0.4069,
+        "y": 0.024,
+        "w": 0.0285,
+        "h": 0.022
+      },
+      "px": {
+        "x": 586,
+        "y": 24,
+        "w": 41,
+        "h": 22
+      },
+      "aspect": 1.8636,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8208
+        },
+        {
+          "hex": "#c0501b",
+          "coverage": 0.0566
+        },
+        {
+          "hex": "#ee8235",
+          "coverage": 0.0472
+        },
+        {
+          "hex": "#981818",
+          "coverage": 0.0377
+        },
+        {
+          "hex": "#a08c68",
+          "coverage": 0.0377
+        }
+      ],
+      "detail": {
+        "energy": 10.0027
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 4,
+      "cropPath": "region-4.png"
+    },
+    {
+      "id": "nav-about",
+      "kind": "text",
+      "note": "About navigation link.",
+      "grid": null,
+      "box": {
+        "x": 0.4528,
+        "y": 0.024,
+        "w": 0.0361,
+        "h": 0.022
+      },
+      "px": {
+        "x": 652,
+        "y": 24,
+        "w": 52,
+        "h": 22
+      },
+      "aspect": 2.3636,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8309
+        },
+        {
+          "hex": "#bfc8b2",
+          "coverage": 0.0809
+        },
+        {
+          "hex": "#a87818",
+          "coverage": 0.0368
+        },
+        {
+          "hex": "#c4a460",
+          "coverage": 0.0294
+        },
+        {
+          "hex": "#187898",
+          "coverage": 0.0221
+        }
+      ],
+      "detail": {
+        "energy": 14.7181
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 5,
+      "cropPath": "region-5.png"
+    },
+    {
+      "id": "nav-booking",
+      "kind": "text",
+      "note": "Table booking navigation link.",
+      "grid": null,
+      "box": {
+        "x": 0.5062,
+        "y": 0.024,
+        "w": 0.05,
+        "h": 0.022
+      },
+      "px": {
+        "x": 729,
+        "y": 24,
+        "w": 72,
+        "h": 22
+      },
+      "aspect": 3.2727,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8167
+        },
+        {
+          "hex": "#b6c6b8",
+          "coverage": 0.0889
+        },
+        {
+          "hex": "#619dad",
+          "coverage": 0.0389
+        },
+        {
+          "hex": "#a87818",
+          "coverage": 0.0333
+        },
+        {
+          "hex": "#985818",
+          "coverage": 0.0222
+        }
+      ],
+      "detail": {
+        "energy": 19.8672
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 6,
+      "cropPath": "region-6.png"
+    },
+    {
+      "id": "nav-location",
+      "kind": "text",
+      "note": "Directions navigation link.",
+      "grid": null,
+      "box": {
+        "x": 0.5722,
+        "y": 0.024,
+        "w": 0.0431,
+        "h": 0.022
+      },
+      "px": {
+        "x": 824,
+        "y": 24,
+        "w": 62,
+        "h": 22
+      },
+      "aspect": 2.8182,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8291
+        },
+        {
+          "hex": "#985818",
+          "coverage": 0.057
+        },
+        {
+          "hex": "#bec8ae",
+          "coverage": 0.0506
+        },
+        {
+          "hex": "#5e9bab",
+          "coverage": 0.0316
+        },
+        {
+          "hex": "#181868",
+          "coverage": 0.0316
+        }
+      ],
+      "detail": {
+        "energy": 14.7339
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 7,
+      "cropPath": "region-7.png"
+    },
+    {
+      "id": "nav-cart",
+      "kind": "control",
+      "note": "Orange cart button showing an empty item count.",
+      "grid": null,
+      "box": {
+        "x": 0.866,
+        "y": 0.012,
+        "w": 0.0833,
+        "h": 0.046
+      },
+      "px": {
+        "x": 1247,
+        "y": 12,
+        "w": 120,
+        "h": 46
+      },
+      "aspect": 2.6087,
+      "palette": [
+        {
+          "hex": "#e87838",
+          "coverage": 0.7917
+        },
+        {
+          "hex": "#a6a6a6",
+          "coverage": 0.0833
+        },
+        {
+          "hex": "#585858",
+          "coverage": 0.0625
+        },
+        {
+          "hex": "#f6f2f6",
+          "coverage": 0.0529
+        },
+        {
+          "hex": "#f8ebcd",
+          "coverage": 0.0096
+        }
+      ],
+      "detail": {
+        "energy": 9.2509
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 8,
+      "cropPath": "region-8.png"
+    },
+    {
+      "id": "menu-kicker",
+      "kind": "text",
+      "note": "Small green Thai, sushi and bowls category line.",
+      "grid": null,
+      "box": {
+        "x": 0.0486,
+        "y": 0.108,
+        "w": 0.1181,
+        "h": 0.02
+      },
+      "px": {
+        "x": 70,
+        "y": 108,
+        "w": 170,
+        "h": 20
+      },
+      "aspect": 8.5,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.9
+        },
+        {
+          "hex": "#80b874",
+          "coverage": 0.0436
+        },
+        {
+          "hex": "#185454",
+          "coverage": 0.0205
+        },
+        {
+          "hex": "#88a444",
+          "coverage": 0.0205
+        },
+        {
+          "hex": "#481818",
+          "coverage": 0.0154
+        }
+      ],
+      "detail": {
+        "energy": 18.318
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 9,
+      "cropPath": "region-9.png"
+    },
+    {
+      "id": "menu-heading",
+      "kind": "text",
+      "note": "Large editorial heading, Välj något gott, with orange emphasis.",
+      "grid": null,
+      "box": {
+        "x": 0.0486,
+        "y": 0.136,
+        "w": 0.2847,
+        "h": 0.055
+      },
+      "px": {
+        "x": 70,
+        "y": 136,
+        "w": 410,
+        "h": 55
+      },
+      "aspect": 7.4545,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8279
+        },
+        {
+          "hex": "#f7f8f8",
+          "coverage": 0.1109
+        },
+        {
+          "hex": "#e87737",
+          "coverage": 0.0485
+        },
+        {
+          "hex": "#f8f5cb",
+          "coverage": 0.0077
+        },
+        {
+          "hex": "#d5a51b",
+          "coverage": 0.0049
+        }
+      ],
+      "detail": {
+        "energy": 55.3236
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 10,
+      "cropPath": "region-10.png"
+    },
+    {
+      "id": "menu-introduction",
+      "kind": "text",
+      "note": "One-line Swedish ordering instruction and takeaway price note.",
+      "grid": null,
+      "box": {
+        "x": 0.0486,
+        "y": 0.196,
+        "w": 0.4514,
+        "h": 0.024
+      },
+      "px": {
+        "x": 70,
+        "y": 196,
+        "w": 650,
+        "h": 24
+      },
+      "aspect": 27.0833,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8235
+        },
+        {
+          "hex": "#a6b6b5",
+          "coverage": 0.0733
+        },
+        {
+          "hex": "#578faf",
+          "coverage": 0.0487
+        },
+        {
+          "hex": "#b89f67",
+          "coverage": 0.0292
+        },
+        {
+          "hex": "#194878",
+          "coverage": 0.0253
+        }
+      ],
+      "detail": {
+        "energy": 52.9868
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 11,
+      "cropPath": "region-11.png"
+    },
+    {
+      "id": "menu-tools",
+      "kind": "chrome",
+      "note": "One menu toolbar grouping menu-family tabs, search, category filters and divider rules.",
+      "grid": null,
+      "container": true,
+      "box": {
+        "x": 0.0486,
+        "y": 0.248,
+        "w": 0.9028,
+        "h": 0.132
+      },
+      "px": {
+        "x": 70,
+        "y": 248,
+        "w": 1300,
+        "h": 132
+      },
+      "aspect": 9.8485,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8558
+        },
+        {
+          "hex": "#333333",
+          "coverage": 0.0646
+        },
+        {
+          "hex": "#182818",
+          "coverage": 0.0473
+        },
+        {
+          "hex": "#e87838",
+          "coverage": 0.0229
+        },
+        {
+          "hex": "#384838",
+          "coverage": 0.0095
+        }
+      ],
+      "detail": {
+        "energy": 10.8686
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 12,
+      "cropPath": "region-12.png"
+    },
+    {
+      "id": "intro-divider",
+      "kind": "chrome",
+      "note": "Thin horizontal divider below the introduction.",
+      "grid": null,
+      "parentId": "menu-tools",
+      "box": {
+        "x": 0.0486,
+        "y": 0.248,
+        "w": 0.9028,
+        "h": 0.001
+      },
+      "px": {
+        "x": 70,
+        "y": 248,
+        "w": 1300,
+        "h": 1
+      },
+      "aspect": 1300,
+      "palette": [
+        {
+          "hex": "#383838",
+          "coverage": 0.9217
+        },
+        {
+          "hex": "#181818",
+          "coverage": 0.0783
+        }
+      ],
+      "detail": {
+        "energy": 0.3044
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": true
+      },
+      "number": 13,
+      "cropPath": "region-13.png"
+    },
+    {
+      "id": "thai-tab",
+      "kind": "control",
+      "note": "Selected Thai and Asian menu tab.",
+      "grid": null,
+      "parentId": "menu-tools",
+      "box": {
+        "x": 0.0486,
+        "y": 0.261,
+        "w": 0.0903,
+        "h": 0.042
+      },
+      "px": {
+        "x": 70,
+        "y": 261,
+        "w": 130,
+        "h": 42
+      },
+      "aspect": 3.0952,
+      "palette": [
+        {
+          "hex": "#e87838",
+          "coverage": 0.4793
+        },
+        {
+          "hex": "#181818",
+          "coverage": 0.4677
+        },
+        {
+          "hex": "#f8f6f8",
+          "coverage": 0.0332
+        },
+        {
+          "hex": "#f8c238",
+          "coverage": 0.0133
+        },
+        {
+          "hex": "#ac5c2c",
+          "coverage": 0.0066
+        }
+      ],
+      "detail": {
+        "energy": 11.1277
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 14,
+      "cropPath": "region-14.png"
+    },
+    {
+      "id": "sushi-tab",
+      "kind": "control",
+      "note": "Sushi and bowls menu tab.",
+      "grid": null,
+      "parentId": "menu-tools",
+      "box": {
+        "x": 0.1354,
+        "y": 0.261,
+        "w": 0.0903,
+        "h": 0.042
+      },
+      "px": {
+        "x": 195,
+        "y": 261,
+        "w": 130,
+        "h": 42
+      },
+      "aspect": 3.0952,
+      "palette": [
+        {
+          "hex": "#232323",
+          "coverage": 0.6383
+        },
+        {
+          "hex": "#e87838",
+          "coverage": 0.2857
+        },
+        {
+          "hex": "#414434",
+          "coverage": 0.0434
+        },
+        {
+          "hex": "#f8ecbd",
+          "coverage": 0.0163
+        },
+        {
+          "hex": "#f8f8f8",
+          "coverage": 0.0163
+        }
+      ],
+      "detail": {
+        "energy": 17.3482
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 15,
+      "cropPath": "region-15.png"
+    },
+    {
+      "id": "search-field",
+      "kind": "control",
+      "note": "Menu search field aligned to the right.",
+      "grid": null,
+      "parentId": "menu-tools",
+      "box": {
+        "x": 0.7639,
+        "y": 0.261,
+        "w": 0.1875,
+        "h": 0.042
+      },
+      "px": {
+        "x": 1100,
+        "y": 261,
+        "w": 270,
+        "h": 42
+      },
+      "aspect": 6.4286,
+      "palette": [
+        {
+          "hex": "#182818",
+          "coverage": 0.6539
+        },
+        {
+          "hex": "#181818",
+          "coverage": 0.3061
+        },
+        {
+          "hex": "#4a2c18",
+          "coverage": 0.0139
+        },
+        {
+          "hex": "#3f5c75",
+          "coverage": 0.0131
+        },
+        {
+          "hex": "#747777",
+          "coverage": 0.0131
+        }
+      ],
+      "detail": {
+        "energy": 9.2467
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 16,
+      "cropPath": "region-16.png"
+    },
+    {
+      "id": "filters-top-rule",
+      "kind": "chrome",
+      "note": "Thin rule below menu tabs and search.",
+      "grid": null,
+      "parentId": "menu-tools",
+      "box": {
+        "x": 0.0486,
+        "y": 0.313,
+        "w": 0.9028,
+        "h": 0.001
+      },
+      "px": {
+        "x": 70,
+        "y": 313,
+        "w": 1300,
+        "h": 1
+      },
+      "aspect": 1300,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 0
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": true
+      },
+      "number": 17,
+      "cropPath": "region-17.png"
+    },
+    {
+      "id": "filter-favorites",
+      "kind": "text",
+      "note": "Active favorites category label.",
+      "grid": null,
+      "parentId": "menu-tools",
+      "box": {
+        "x": 0.0486,
+        "y": 0.337,
+        "w": 0.0486,
+        "h": 0.024
+      },
+      "px": {
+        "x": 70,
+        "y": 337,
+        "w": 70,
+        "h": 24
+      },
+      "aspect": 2.9167,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.9474
+        },
+        {
+          "hex": "#e5f8f5",
+          "coverage": 0.0263
+        },
+        {
+          "hex": "#b87818",
+          "coverage": 0.0158
+        },
+        {
+          "hex": "#181878",
+          "coverage": 0.0053
+        },
+        {
+          "hex": "#18a8c8",
+          "coverage": 0.0053
+        }
+      ],
+      "detail": {
+        "energy": 7.0924
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 18,
+      "cropPath": "region-18.png"
+    },
+    {
+      "id": "filter-basil",
+      "kind": "text",
+      "note": "Stark Basilika category filter.",
+      "grid": null,
+      "parentId": "menu-tools",
+      "box": {
+        "x": 0.0944,
+        "y": 0.337,
+        "w": 0.0556,
+        "h": 0.024
+      },
+      "px": {
+        "x": 136,
+        "y": 337,
+        "w": 80,
+        "h": 24
+      },
+      "aspect": 3.3333,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8934
+        },
+        {
+          "hex": "#eef8f4",
+          "coverage": 0.0406
+        },
+        {
+          "hex": "#4b82a2",
+          "coverage": 0.0254
+        },
+        {
+          "hex": "#1878b8",
+          "coverage": 0.0203
+        },
+        {
+          "hex": "#885818",
+          "coverage": 0.0203
+        }
+      ],
+      "detail": {
+        "energy": 20.7147
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 19,
+      "cropPath": "region-19.png"
+    },
+    {
+      "id": "filter-curry",
+      "kind": "text",
+      "note": "Curry category filter.",
+      "grid": null,
+      "parentId": "menu-tools",
+      "box": {
+        "x": 0.15,
+        "y": 0.337,
+        "w": 0.05,
+        "h": 0.024
+      },
+      "px": {
+        "x": 216,
+        "y": 337,
+        "w": 72,
+        "h": 24
+      },
+      "aspect": 3,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8644
+        },
+        {
+          "hex": "#a2b080",
+          "coverage": 0.0452
+        },
+        {
+          "hex": "#9a7a3d",
+          "coverage": 0.0395
+        },
+        {
+          "hex": "#5285a5",
+          "coverage": 0.0282
+        },
+        {
+          "hex": "#183878",
+          "coverage": 0.0226
+        }
+      ],
+      "detail": {
+        "energy": 14.6897
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 20,
+      "cropPath": "region-20.png"
+    },
+    {
+      "id": "filter-pad-thai",
+      "kind": "text",
+      "note": "Pad Thai category filter.",
+      "grid": null,
+      "parentId": "menu-tools",
+      "box": {
+        "x": 0.2021,
+        "y": 0.337,
+        "w": 0.0403,
+        "h": 0.024
+      },
+      "px": {
+        "x": 291,
+        "y": 337,
+        "w": 58,
+        "h": 24
+      },
+      "aspect": 2.4167,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8947
+        },
+        {
+          "hex": "#a3834f",
+          "coverage": 0.0461
+        },
+        {
+          "hex": "#5888a8",
+          "coverage": 0.0263
+        },
+        {
+          "hex": "#783818",
+          "coverage": 0.0197
+        },
+        {
+          "hex": "#181838",
+          "coverage": 0.0132
+        }
+      ],
+      "detail": {
+        "energy": 11.2318
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 21,
+      "cropPath": "region-21.png"
+    },
+    {
+      "id": "filter-wok",
+      "kind": "text",
+      "note": "Wok category filter.",
+      "grid": null,
+      "parentId": "menu-tools",
+      "box": {
+        "x": 0.2431,
+        "y": 0.337,
+        "w": 0.0264,
+        "h": 0.024
+      },
+      "px": {
+        "x": 350,
+        "y": 337,
+        "w": 38,
+        "h": 24
+      },
+      "aspect": 1.5833,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.798
+        },
+        {
+          "hex": "#8eb6a6",
+          "coverage": 0.0808
+        },
+        {
+          "hex": "#a5b285",
+          "coverage": 0.0505
+        },
+        {
+          "hex": "#457e9e",
+          "coverage": 0.0505
+        },
+        {
+          "hex": "#885818",
+          "coverage": 0.0202
+        }
+      ],
+      "detail": {
+        "energy": 8.8517
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 22,
+      "cropPath": "region-22.png"
+    },
+    {
+      "id": "filter-mains",
+      "kind": "text",
+      "note": "Main dishes category filter.",
+      "grid": null,
+      "parentId": "menu-tools",
+      "box": {
+        "x": 0.2687,
+        "y": 0.337,
+        "w": 0.0556,
+        "h": 0.024
+      },
+      "px": {
+        "x": 387,
+        "y": 337,
+        "w": 80,
+        "h": 24
+      },
+      "aspect": 3.3333,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8775
+        },
+        {
+          "hex": "#a08048",
+          "coverage": 0.0392
+        },
+        {
+          "hex": "#a2b082",
+          "coverage": 0.0392
+        },
+        {
+          "hex": "#387898",
+          "coverage": 0.0294
+        },
+        {
+          "hex": "#181858",
+          "coverage": 0.0147
+        }
+      ],
+      "detail": {
+        "energy": 12.058
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 23,
+      "cropPath": "region-23.png"
+    },
+    {
+      "id": "active-filter-mark",
+      "kind": "chrome",
+      "note": "Short green underline marking the active category.",
+      "grid": null,
+      "parentId": "menu-tools",
+      "box": {
+        "x": 0.0486,
+        "y": 0.361,
+        "w": 0.0354,
+        "h": 0.002
+      },
+      "px": {
+        "x": 70,
+        "y": 361,
+        "w": 51,
+        "h": 2
+      },
+      "aspect": 25.5,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 0.125
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": true
+      },
+      "number": 24,
+      "cropPath": "region-24.png"
+    },
+    {
+      "id": "filters-bottom-rule",
+      "kind": "chrome",
+      "note": "Thin rule between filters and catalog.",
+      "grid": null,
+      "parentId": "menu-tools",
+      "box": {
+        "x": 0.0486,
+        "y": 0.378,
+        "w": 0.9028,
+        "h": 0.001
+      },
+      "px": {
+        "x": 70,
+        "y": 378,
+        "w": 1300,
+        "h": 1
+      },
+      "aspect": 1300,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.9245
+        },
+        {
+          "hex": "#f6f8f5",
+          "coverage": 0.0448
+        },
+        {
+          "hex": "#f5e8c5",
+          "coverage": 0.0142
+        },
+        {
+          "hex": "#d8ecf8",
+          "coverage": 0.0094
+        },
+        {
+          "hex": "#bd6d18",
+          "coverage": 0.0071
+        }
+      ],
+      "detail": {
+        "energy": 6.9586
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": true
+      },
+      "number": 25,
+      "cropPath": "region-25.png"
+    },
+    {
+      "id": "favorites-header",
+      "kind": "chrome",
+      "note": "Section header grouping its title and mixed-plate subtitle.",
+      "grid": null,
+      "container": true,
+      "box": {
+        "x": 0.0486,
+        "y": 0.386,
+        "w": 0.1944,
+        "h": 0.055
+      },
+      "px": {
+        "x": 70,
+        "y": 386,
+        "w": 280,
+        "h": 55
+      },
+      "aspect": 5.0909,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.9013
+        },
+        {
+          "hex": "#f2f7f7",
+          "coverage": 0.0493
+        },
+        {
+          "hex": "#959895",
+          "coverage": 0.0231
+        },
+        {
+          "hex": "#4f7c96",
+          "coverage": 0.0134
+        },
+        {
+          "hex": "#1a3c60",
+          "coverage": 0.0128
+        }
+      ],
+      "detail": {
+        "energy": 44.8311
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 26,
+      "cropPath": "region-26.png"
+    },
+    {
+      "id": "favorites-heading",
+      "kind": "text",
+      "note": "Gästernas favoriter section heading.",
+      "grid": null,
+      "parentId": "favorites-header",
+      "box": {
+        "x": 0.0486,
+        "y": 0.386,
+        "w": 0.1806,
+        "h": 0.034
+      },
+      "px": {
+        "x": 70,
+        "y": 386,
+        "w": 260,
+        "h": 34
+      },
+      "aspect": 7.6471,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8862
+        },
+        {
+          "hex": "#f2f7f7",
+          "coverage": 0.0775
+        },
+        {
+          "hex": "#f8edc1",
+          "coverage": 0.0151
+        },
+        {
+          "hex": "#b5e0f7",
+          "coverage": 0.0121
+        },
+        {
+          "hex": "#f3ca8f",
+          "coverage": 0.0091
+        }
+      ],
+      "detail": {
+        "energy": 54.4719
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 27,
+      "cropPath": "region-27.png"
+    },
+    {
+      "id": "favorites-subtitle",
+      "kind": "text",
+      "note": "Three-dish mixed plate subtitle.",
+      "grid": null,
+      "parentId": "favorites-header",
+      "box": {
+        "x": 0.0486,
+        "y": 0.42,
+        "w": 0.1597,
+        "h": 0.019
+      },
+      "px": {
+        "x": 70,
+        "y": 420,
+        "w": 230,
+        "h": 19
+      },
+      "aspect": 12.1053,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8928
+        },
+        {
+          "hex": "#704018",
+          "coverage": 0.0312
+        },
+        {
+          "hex": "#7e9596",
+          "coverage": 0.0273
+        },
+        {
+          "hex": "#3e7393",
+          "coverage": 0.0253
+        },
+        {
+          "hex": "#183b5d",
+          "coverage": 0.0234
+        }
+      ],
+      "detail": {
+        "energy": 21.7672
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 28,
+      "cropPath": "region-28.png"
+    },
+    {
+      "id": "dish-a-card",
+      "kind": "chrome",
+      "note": "Menu A catalog row grouping its code, name, description, price and add action.",
+      "grid": null,
+      "container": true,
+      "box": {
+        "x": 0.0486,
+        "y": 0.455,
+        "w": 0.316,
+        "h": 0.15
+      },
+      "px": {
+        "x": 70,
+        "y": 455,
+        "w": 455,
+        "h": 150
+      },
+      "aspect": 3.0333,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.9819
+        },
+        {
+          "hex": "#a8b8a5",
+          "coverage": 0.0069
+        },
+        {
+          "hex": "#a2b383",
+          "coverage": 0.0045
+        },
+        {
+          "hex": "#f3f8f6",
+          "coverage": 0.0038
+        },
+        {
+          "hex": "#185888",
+          "coverage": 0.003
+        }
+      ],
+      "detail": {
+        "energy": 9.6597
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 29,
+      "cropPath": "region-29.png"
+    },
+    {
+      "id": "dish-a-code",
+      "kind": "text",
+      "note": "Menu A identifier.",
+      "grid": null,
+      "parentId": "dish-a-card",
+      "box": {
+        "x": 0.0486,
+        "y": 0.463,
+        "w": 0.0243,
+        "h": 0.024
+      },
+      "px": {
+        "x": 70,
+        "y": 463,
+        "w": 35,
+        "h": 24
+      },
+      "aspect": 1.4583,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 0.0137
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "number": 30,
+      "cropPath": "region-30.png"
+    },
+    {
+      "id": "dish-a-name",
+      "kind": "text",
+      "note": "Meny A dish name.",
+      "grid": null,
+      "parentId": "dish-a-card",
+      "box": {
+        "x": 0.0875,
+        "y": 0.462,
+        "w": 0.0833,
+        "h": 0.024
+      },
+      "px": {
+        "x": 126,
+        "y": 462,
+        "w": 120,
+        "h": 24
+      },
+      "aspect": 5,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 0
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "number": 31,
+      "cropPath": "region-31.png"
+    },
+    {
+      "id": "dish-a-description",
+      "kind": "text",
+      "note": "Meny A three-item dish description.",
+      "grid": null,
+      "parentId": "dish-a-card",
+      "box": {
+        "x": 0.0875,
+        "y": 0.489,
+        "w": 0.2431,
+        "h": 0.038
+      },
+      "px": {
+        "x": 126,
+        "y": 489,
+        "w": 350,
+        "h": 38
+      },
+      "aspect": 9.2105,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.9487
+        },
+        {
+          "hex": "#581818",
+          "coverage": 0.0144
+        },
+        {
+          "hex": "#381818",
+          "coverage": 0.013
+        },
+        {
+          "hex": "#f6f8f8",
+          "coverage": 0.0123
+        },
+        {
+          "hex": "#183878",
+          "coverage": 0.0116
+        }
+      ],
+      "detail": {
+        "energy": 34.2105
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 32,
+      "cropPath": "region-32.png"
+    },
+    {
+      "id": "dish-a-price",
+      "kind": "text",
+      "note": "Meny A takeaway price.",
+      "grid": null,
+      "parentId": "dish-a-card",
+      "box": {
+        "x": 0.3264,
+        "y": 0.463,
+        "w": 0.0347,
+        "h": 0.024
+      },
+      "px": {
+        "x": 470,
+        "y": 463,
+        "w": 50,
+        "h": 24
+      },
+      "aspect": 2.0833,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 0.0006
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "number": 33,
+      "cropPath": "region-33.png"
+    },
+    {
+      "id": "dish-a-add",
+      "kind": "control",
+      "note": "Green add-to-cart button for Meny A.",
+      "grid": null,
+      "parentId": "dish-a-card",
+      "box": {
+        "x": 0.0875,
+        "y": 0.55,
+        "w": 0.0632,
+        "h": 0.039
+      },
+      "px": {
+        "x": 126,
+        "y": 550,
+        "w": 91,
+        "h": 39
+      },
+      "aspect": 2.3333,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8791
+        },
+        {
+          "hex": "#383828",
+          "coverage": 0.0781
+        },
+        {
+          "hex": "#f4f8f8",
+          "coverage": 0.0227
+        },
+        {
+          "hex": "#f4d090",
+          "coverage": 0.0101
+        },
+        {
+          "hex": "#f8f4c4",
+          "coverage": 0.0101
+        }
+      ],
+      "detail": {
+        "energy": 6.3573
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 34,
+      "cropPath": "region-34.png"
+    },
+    {
+      "id": "dish-b-card",
+      "kind": "chrome",
+      "note": "Menu B catalog row grouping its code, name, description, price and add action.",
+      "grid": null,
+      "container": true,
+      "box": {
+        "x": 0.3819,
+        "y": 0.455,
+        "w": 0.316,
+        "h": 0.15
+      },
+      "px": {
+        "x": 550,
+        "y": 455,
+        "w": 455,
+        "h": 150
+      },
+      "aspect": 3.0333,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8841
+        },
+        {
+          "hex": "#78b858",
+          "coverage": 0.1097
+        },
+        {
+          "hex": "#f8a461",
+          "coverage": 0.0029
+        },
+        {
+          "hex": "#388858",
+          "coverage": 0.002
+        },
+        {
+          "hex": "#686818",
+          "coverage": 0.0013
+        }
+      ],
+      "detail": {
+        "energy": 7.8335
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 35,
+      "cropPath": "region-35.png"
+    },
+    {
+      "id": "dish-b-code",
+      "kind": "text",
+      "note": "Menu B identifier.",
+      "grid": null,
+      "parentId": "dish-b-card",
+      "box": {
+        "x": 0.3819,
+        "y": 0.463,
+        "w": 0.0243,
+        "h": 0.024
+      },
+      "px": {
+        "x": 550,
+        "y": 463,
+        "w": 35,
+        "h": 24
+      },
+      "aspect": 1.4583,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 0.0137
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "number": 36,
+      "cropPath": "region-36.png"
+    },
+    {
+      "id": "dish-b-name",
+      "kind": "text",
+      "note": "Meny B dish name.",
+      "grid": null,
+      "parentId": "dish-b-card",
+      "box": {
+        "x": 0.4215,
+        "y": 0.462,
+        "w": 0.0833,
+        "h": 0.024
+      },
+      "px": {
+        "x": 607,
+        "y": 462,
+        "w": 120,
+        "h": 24
+      },
+      "aspect": 5,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 0
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "number": 37,
+      "cropPath": "region-37.png"
+    },
+    {
+      "id": "dish-b-description",
+      "kind": "text",
+      "note": "Meny B three-item dish description.",
+      "grid": null,
+      "parentId": "dish-b-card",
+      "box": {
+        "x": 0.4215,
+        "y": 0.489,
+        "w": 0.2431,
+        "h": 0.038
+      },
+      "px": {
+        "x": 607,
+        "y": 489,
+        "w": 350,
+        "h": 38
+      },
+      "aspect": 9.2105,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8179
+        },
+        {
+          "hex": "#77b858",
+          "coverage": 0.162
+        },
+        {
+          "hex": "#f7a767",
+          "coverage": 0.0094
+        },
+        {
+          "hex": "#388858",
+          "coverage": 0.0067
+        },
+        {
+          "hex": "#686818",
+          "coverage": 0.004
+        }
+      ],
+      "detail": {
+        "energy": 12.4236
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 38,
+      "cropPath": "region-38.png"
+    },
+    {
+      "id": "dish-b-price",
+      "kind": "text",
+      "note": "Meny B takeaway price.",
+      "grid": null,
+      "parentId": "dish-b-card",
+      "box": {
+        "x": 0.6597,
+        "y": 0.463,
+        "w": 0.0333,
+        "h": 0.024
+      },
+      "px": {
+        "x": 950,
+        "y": 463,
+        "w": 48,
+        "h": 24
+      },
+      "aspect": 2,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.7891
+        },
+        {
+          "hex": "#78b858",
+          "coverage": 0.2109
+        }
+      ],
+      "detail": {
+        "energy": 1.7489
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 39,
+      "cropPath": "region-39.png"
+    },
+    {
+      "id": "dish-b-add",
+      "kind": "control",
+      "note": "Green add-to-cart button for Meny B.",
+      "grid": null,
+      "parentId": "dish-b-card",
+      "box": {
+        "x": 0.4215,
+        "y": 0.55,
+        "w": 0.0625,
+        "h": 0.039
+      },
+      "px": {
+        "x": 607,
+        "y": 550,
+        "w": 90,
+        "h": 39
+      },
+      "aspect": 2.3077,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.9231
+        },
+        {
+          "hex": "#383828",
+          "coverage": 0.0769
+        }
+      ],
+      "detail": {
+        "energy": 0.6819
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": true
+      },
+      "number": 40,
+      "cropPath": "region-40.png"
+    },
+    {
+      "id": "dish-c-card",
+      "kind": "chrome",
+      "note": "Menu C catalog row grouping its code, name, description, price and add action.",
+      "grid": null,
+      "container": true,
+      "box": {
+        "x": 0.0486,
+        "y": 0.612,
+        "w": 0.316,
+        "h": 0.15
+      },
+      "px": {
+        "x": 70,
+        "y": 612,
+        "w": 455,
+        "h": 150
+      },
+      "aspect": 3.0333,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.9683
+        },
+        {
+          "hex": "#383828",
+          "coverage": 0.0183
+        },
+        {
+          "hex": "#4d82a2",
+          "coverage": 0.005
+        },
+        {
+          "hex": "#185888",
+          "coverage": 0.0042
+        },
+        {
+          "hex": "#a2b282",
+          "coverage": 0.0042
+        }
+      ],
+      "detail": {
+        "energy": 8.6733
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 41,
+      "cropPath": "region-41.png"
+    },
+    {
+      "id": "dish-c-code",
+      "kind": "text",
+      "note": "Menu C identifier.",
+      "grid": null,
+      "parentId": "dish-c-card",
+      "box": {
+        "x": 0.0486,
+        "y": 0.619,
+        "w": 0.0243,
+        "h": 0.024
+      },
+      "px": {
+        "x": 70,
+        "y": 619,
+        "w": 35,
+        "h": 24
+      },
+      "aspect": 1.4583,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 0.0137
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "number": 42,
+      "cropPath": "region-42.png"
+    },
+    {
+      "id": "dish-c-name",
+      "kind": "text",
+      "note": "Meny C dish name.",
+      "grid": null,
+      "parentId": "dish-c-card",
+      "box": {
+        "x": 0.0875,
+        "y": 0.618,
+        "w": 0.0833,
+        "h": 0.024
+      },
+      "px": {
+        "x": 126,
+        "y": 618,
+        "w": 120,
+        "h": 24
+      },
+      "aspect": 5,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 1.3117
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": true
+      },
+      "number": 43,
+      "cropPath": "region-43.png"
+    },
+    {
+      "id": "dish-c-description",
+      "kind": "text",
+      "note": "Meny C three-item dish description.",
+      "grid": null,
+      "parentId": "dish-c-card",
+      "box": {
+        "x": 0.0875,
+        "y": 0.645,
+        "w": 0.2431,
+        "h": 0.038
+      },
+      "px": {
+        "x": 126,
+        "y": 645,
+        "w": 350,
+        "h": 38
+      },
+      "aspect": 9.2105,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.9809
+        },
+        {
+          "hex": "#f1f8f7",
+          "coverage": 0.0086
+        },
+        {
+          "hex": "#f8f1c1",
+          "coverage": 0.0046
+        },
+        {
+          "hex": "#a81818",
+          "coverage": 0.004
+        },
+        {
+          "hex": "#f8d898",
+          "coverage": 0.002
+        }
+      ],
+      "detail": {
+        "energy": 8.8635
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 44,
+      "cropPath": "region-44.png"
+    },
+    {
+      "id": "dish-c-price",
+      "kind": "text",
+      "note": "Meny C takeaway price.",
+      "grid": null,
+      "parentId": "dish-c-card",
+      "box": {
+        "x": 0.3264,
+        "y": 0.619,
+        "w": 0.0347,
+        "h": 0.024
+      },
+      "px": {
+        "x": 470,
+        "y": 619,
+        "w": 50,
+        "h": 24
+      },
+      "aspect": 2.0833,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 0.9834
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": true
+      },
+      "number": 45,
+      "cropPath": "region-45.png"
+    },
+    {
+      "id": "dish-c-add",
+      "kind": "control",
+      "note": "Green add-to-cart button for Meny C.",
+      "grid": null,
+      "parentId": "dish-c-card",
+      "box": {
+        "x": 0.0875,
+        "y": 0.706,
+        "w": 0.0632,
+        "h": 0.039
+      },
+      "px": {
+        "x": 126,
+        "y": 706,
+        "w": 91,
+        "h": 39
+      },
+      "aspect": 2.3333,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 0.9414
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": true
+      },
+      "number": 46,
+      "cropPath": "region-46.png"
+    },
+    {
+      "id": "dish-26-card",
+      "kind": "chrome",
+      "note": "Stark Basilika dish row grouping its code, name, description, price and add action.",
+      "grid": null,
+      "container": true,
+      "box": {
+        "x": 0.3819,
+        "y": 0.612,
+        "w": 0.316,
+        "h": 0.15
+      },
+      "px": {
+        "x": 550,
+        "y": 612,
+        "w": 455,
+        "h": 150
+      },
+      "aspect": 3.0333,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8796
+        },
+        {
+          "hex": "#78b858",
+          "coverage": 0.0989
+        },
+        {
+          "hex": "#383828",
+          "coverage": 0.0189
+        },
+        {
+          "hex": "#f8a868",
+          "coverage": 0.0015
+        },
+        {
+          "hex": "#388858",
+          "coverage": 0.0012
+        }
+      ],
+      "detail": {
+        "energy": 7.3381
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 47,
+      "cropPath": "region-47.png"
+    },
+    {
+      "id": "dish-26-code",
+      "kind": "text",
+      "note": "Dish 26 menu number.",
+      "grid": null,
+      "parentId": "dish-26-card",
+      "box": {
+        "x": 0.3819,
+        "y": 0.619,
+        "w": 0.0243,
+        "h": 0.024
+      },
+      "px": {
+        "x": 550,
+        "y": 619,
+        "w": 35,
+        "h": 24
+      },
+      "aspect": 1.4583,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 0.6965
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": true
+      },
+      "number": 48,
+      "cropPath": "region-48.png"
+    },
+    {
+      "id": "dish-26-name",
+      "kind": "text",
+      "note": "Stark Basilika chicken dish name.",
+      "grid": null,
+      "parentId": "dish-26-card",
+      "box": {
+        "x": 0.4215,
+        "y": 0.618,
+        "w": 0.2083,
+        "h": 0.024
+      },
+      "px": {
+        "x": 607,
+        "y": 618,
+        "w": 300,
+        "h": 24
+      },
+      "aspect": 12.5,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.9812
+        },
+        {
+          "hex": "#76b657",
+          "coverage": 0.0188
+        }
+      ],
+      "detail": {
+        "energy": 2.094
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 49,
+      "cropPath": "region-49.png"
+    },
+    {
+      "id": "dish-26-description",
+      "kind": "text",
+      "note": "Chicken, Thai basil, chili, garlic and jasmine rice description.",
+      "grid": null,
+      "parentId": "dish-26-card",
+      "box": {
+        "x": 0.4215,
+        "y": 0.645,
+        "w": 0.2431,
+        "h": 0.026
+      },
+      "px": {
+        "x": 607,
+        "y": 645,
+        "w": 350,
+        "h": 26
+      },
+      "aspect": 13.4615,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.9164
+        },
+        {
+          "hex": "#78b858",
+          "coverage": 0.0836
+        }
+      ],
+      "detail": {
+        "energy": 3.343
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 50,
+      "cropPath": "region-50.png"
+    },
+    {
+      "id": "dish-26-price",
+      "kind": "text",
+      "note": "Dish 26 takeaway price.",
+      "grid": null,
+      "parentId": "dish-26-card",
+      "box": {
+        "x": 0.6597,
+        "y": 0.619,
+        "w": 0.0333,
+        "h": 0.024
+      },
+      "px": {
+        "x": 950,
+        "y": 619,
+        "w": 48,
+        "h": 24
+      },
+      "aspect": 2,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8594
+        },
+        {
+          "hex": "#78b858",
+          "coverage": 0.1406
+        }
+      ],
+      "detail": {
+        "energy": 2.0447
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": true
+      },
+      "number": 51,
+      "cropPath": "region-51.png"
+    },
+    {
+      "id": "dish-26-add",
+      "kind": "control",
+      "note": "Green add-to-cart button for dish 26.",
+      "grid": null,
+      "parentId": "dish-26-card",
+      "box": {
+        "x": 0.4215,
+        "y": 0.706,
+        "w": 0.0625,
+        "h": 0.039
+      },
+      "px": {
+        "x": 607,
+        "y": 706,
+        "w": 90,
+        "h": 39
+      },
+      "aspect": 2.3077,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 0.9427
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": true
+      },
+      "number": 52,
+      "cropPath": "region-52.png"
+    },
+    {
+      "id": "cart-panel",
+      "kind": "chrome",
+      "note": "Dark bordered cart summary panel.",
+      "grid": null,
+      "container": true,
+      "box": {
+        "x": 0.7153,
+        "y": 0.335,
+        "w": 0.2361,
+        "h": 0.273
+      },
+      "px": {
+        "x": 1030,
+        "y": 335,
+        "w": 340,
+        "h": 273
+      },
+      "aspect": 1.2454,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8548
+        },
+        {
+          "hex": "#e87838",
+          "coverage": 0.1201
+        },
+        {
+          "hex": "#f5f8f8",
+          "coverage": 0.0177
+        },
+        {
+          "hex": "#347191",
+          "coverage": 0.0043
+        },
+        {
+          "hex": "#f8e4b0",
+          "coverage": 0.0032
+        }
+      ],
+      "detail": {
+        "energy": 15.701
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 53,
+      "cropPath": "region-53.png"
+    },
+    {
+      "id": "cart-title",
+      "kind": "text",
+      "note": "Din varukorg panel heading.",
+      "grid": null,
+      "parentId": "cart-panel",
+      "box": {
+        "x": 0.7306,
+        "y": 0.354,
+        "w": 0.1597,
+        "h": 0.033
+      },
+      "px": {
+        "x": 1052,
+        "y": 354,
+        "w": 230,
+        "h": 33
+      },
+      "aspect": 6.9697,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.9146
+        },
+        {
+          "hex": "#f8f8f6",
+          "coverage": 0.0598
+        },
+        {
+          "hex": "#c6e8f6",
+          "coverage": 0.011
+        },
+        {
+          "hex": "#186dad",
+          "coverage": 0.0073
+        },
+        {
+          "hex": "#75c3e3",
+          "coverage": 0.0073
+        }
+      ],
+      "detail": {
+        "energy": 26.2168
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 54,
+      "cropPath": "region-54.png"
+    },
+    {
+      "id": "cart-explanation",
+      "kind": "text",
+      "note": "Short description of cart contents.",
+      "grid": null,
+      "parentId": "cart-panel",
+      "box": {
+        "x": 0.7306,
+        "y": 0.387,
+        "w": 0.1458,
+        "h": 0.02
+      },
+      "px": {
+        "x": 1052,
+        "y": 387,
+        "w": 210,
+        "h": 20
+      },
+      "aspect": 10.5,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.9136
+        },
+        {
+          "hex": "#f8f6f4",
+          "coverage": 0.0518
+        },
+        {
+          "hex": "#a8b6a4",
+          "coverage": 0.0194
+        },
+        {
+          "hex": "#78a8a8",
+          "coverage": 0.0086
+        },
+        {
+          "hex": "#286d8d",
+          "coverage": 0.0065
+        }
+      ],
+      "detail": {
+        "energy": 13.4887
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 55,
+      "cropPath": "region-55.png"
+    },
+    {
+      "id": "cart-empty-state",
+      "kind": "text",
+      "note": "Empty cart message and dash placeholder.",
+      "grid": null,
+      "parentId": "cart-panel",
+      "box": {
+        "x": 0.7306,
+        "y": 0.415,
+        "w": 0.1528,
+        "h": 0.022
+      },
+      "px": {
+        "x": 1052,
+        "y": 415,
+        "w": 220,
+        "h": 22
+      },
+      "aspect": 10,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.9812
+        },
+        {
+          "hex": "#f8dda3",
+          "coverage": 0.0051
+        },
+        {
+          "hex": "#f3f8ed",
+          "coverage": 0.0051
+        },
+        {
+          "hex": "#a81818",
+          "coverage": 0.0051
+        },
+        {
+          "hex": "#18a8c8",
+          "coverage": 0.0034
+        }
+      ],
+      "detail": {
+        "energy": 6.2296
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 56,
+      "cropPath": "region-56.png"
+    },
+    {
+      "id": "cart-divider",
+      "kind": "chrome",
+      "note": "Divider above cart total.",
+      "grid": null,
+      "parentId": "cart-panel",
+      "box": {
+        "x": 0.7306,
+        "y": 0.449,
+        "w": 0.2049,
+        "h": 0.001
+      },
+      "px": {
+        "x": 1052,
+        "y": 449,
+        "w": 295,
+        "h": 1
+      },
+      "aspect": 295,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.9899
+        },
+        {
+          "hex": "#383838",
+          "coverage": 0.0101
+        }
+      ],
+      "detail": {
+        "energy": 0.1111
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": true
+      },
+      "number": 57,
+      "cropPath": "region-57.png"
+    },
+    {
+      "id": "cart-total-label",
+      "kind": "text",
+      "note": "Cart total label.",
+      "grid": null,
+      "parentId": "cart-panel",
+      "box": {
+        "x": 0.7306,
+        "y": 0.469,
+        "w": 0.0486,
+        "h": 0.026
+      },
+      "px": {
+        "x": 1052,
+        "y": 469,
+        "w": 70,
+        "h": 26
+      },
+      "aspect": 2.6923,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8578
+        },
+        {
+          "hex": "#f5f8f6",
+          "coverage": 0.0474
+        },
+        {
+          "hex": "#9cd4f4",
+          "coverage": 0.0379
+        },
+        {
+          "hex": "#781818",
+          "coverage": 0.0332
+        },
+        {
+          "hex": "#f8d898",
+          "coverage": 0.0237
+        }
+      ],
+      "detail": {
+        "energy": 10.8559
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 58,
+      "cropPath": "region-58.png"
+    },
+    {
+      "id": "cart-total-price",
+      "kind": "text",
+      "note": "Cart total, zero kronor in the empty state.",
+      "grid": null,
+      "parentId": "cart-panel",
+      "box": {
+        "x": 0.9063,
+        "y": 0.469,
+        "w": 0.0313,
+        "h": 0.026
+      },
+      "px": {
+        "x": 1305,
+        "y": 469,
+        "w": 45,
+        "h": 26
+      },
+      "aspect": 1.7308,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 0.4665
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": true
+      },
+      "number": 59,
+      "cropPath": "region-59.png"
+    },
+    {
+      "id": "cart-checkout",
+      "kind": "control",
+      "note": "Orange continue-to-order action.",
+      "grid": null,
+      "parentId": "cart-panel",
+      "box": {
+        "x": 0.7306,
+        "y": 0.509,
+        "w": 0.2049,
+        "h": 0.048
+      },
+      "px": {
+        "x": 1052,
+        "y": 509,
+        "w": 295,
+        "h": 48
+      },
+      "aspect": 6.1458,
+      "palette": [
+        {
+          "hex": "#e87838",
+          "coverage": 0.5609
+        },
+        {
+          "hex": "#181818",
+          "coverage": 0.3765
+        },
+        {
+          "hex": "#f8f7f8",
+          "coverage": 0.0393
+        },
+        {
+          "hex": "#f8f5cf",
+          "coverage": 0.0129
+        },
+        {
+          "hex": "#383838",
+          "coverage": 0.0103
+        }
+      ],
+      "detail": {
+        "energy": 17.382
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 60,
+      "cropPath": "region-60.png"
+    },
+    {
+      "id": "cart-pickup-note",
+      "kind": "text",
+      "note": "Takeaway and restaurant opening-hours note.",
+      "grid": null,
+      "parentId": "cart-panel",
+      "box": {
+        "x": 0.7306,
+        "y": 0.57,
+        "w": 0.1944,
+        "h": 0.02
+      },
+      "px": {
+        "x": 1052,
+        "y": 570,
+        "w": 280,
+        "h": 20
+      },
+      "aspect": 14,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.8677
+        },
+        {
+          "hex": "#a89e65",
+          "coverage": 0.0598
+        },
+        {
+          "hex": "#9fb896",
+          "coverage": 0.0409
+        },
+        {
+          "hex": "#886818",
+          "coverage": 0.0173
+        },
+        {
+          "hex": "#7dada8",
+          "coverage": 0.0142
+        }
+      ],
+      "detail": {
+        "energy": 22.7318
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 61,
+      "cropPath": "region-61.png"
+    }
+  ],
+  "issues": [
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region menu-tools: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region favorites-header: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region dish-a-card: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region dish-b-card: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region dish-c-card: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region dish-26-card: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region cart-panel: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)"
+    },
+    {
+      "severity": "warning",
+      "code": "uncovered-ink",
+      "regionId": null,
+      "message": "2 grid cells have detail outside named regions. This is a coverage heuristic, not proof of missing components."
+    }
+  ],
+  "overlaps": [
+    {
+      "a": "navigation-surface",
+      "b": "brand-name",
+      "pixels": 3600.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "navigation-surface",
+      "b": "brand-location",
+      "pixels": 1800.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "navigation-surface",
+      "b": "nav-menu",
+      "pixels": 902.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "navigation-surface",
+      "b": "nav-about",
+      "pixels": 1144.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "navigation-surface",
+      "b": "nav-booking",
+      "pixels": 1584.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "navigation-surface",
+      "b": "nav-location",
+      "pixels": 1364.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "navigation-surface",
+      "b": "nav-cart",
+      "pixels": 5520.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "menu-tools",
+      "b": "intro-divider",
+      "pixels": 1300.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "menu-tools",
+      "b": "thai-tab",
+      "pixels": 5460.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "menu-tools",
+      "b": "sushi-tab",
+      "pixels": 5460.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "menu-tools",
+      "b": "search-field",
+      "pixels": 11340.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "menu-tools",
+      "b": "filters-top-rule",
+      "pixels": 1300.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "menu-tools",
+      "b": "filter-favorites",
+      "pixels": 1680.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "menu-tools",
+      "b": "filter-basil",
+      "pixels": 1920.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "menu-tools",
+      "b": "filter-curry",
+      "pixels": 1728.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "menu-tools",
+      "b": "filter-pad-thai",
+      "pixels": 1392.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "menu-tools",
+      "b": "filter-wok",
+      "pixels": 912.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "menu-tools",
+      "b": "filter-mains",
+      "pixels": 1920.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "menu-tools",
+      "b": "active-filter-mark",
+      "pixels": 102.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "menu-tools",
+      "b": "filters-bottom-rule",
+      "pixels": 1300.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "menu-tools",
+      "b": "cart-panel",
+      "pixels": 15300.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "menu-tools",
+      "b": "cart-title",
+      "pixels": 5980.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "thai-tab",
+      "b": "sushi-tab",
+      "pixels": 210.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "filter-favorites",
+      "b": "filter-basil",
+      "pixels": 96.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "filter-wok",
+      "b": "filter-mains",
+      "pixels": 24.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "filters-bottom-rule",
+      "b": "cart-panel",
+      "pixels": 340.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "filters-bottom-rule",
+      "b": "cart-title",
+      "pixels": 230.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "favorites-header",
+      "b": "favorites-heading",
+      "pixels": 8840.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "favorites-header",
+      "b": "favorites-subtitle",
+      "pixels": 4370.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-a-card",
+      "b": "dish-a-code",
+      "pixels": 840.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-a-card",
+      "b": "dish-a-name",
+      "pixels": 2880.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-a-card",
+      "b": "dish-a-description",
+      "pixels": 13300.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-a-card",
+      "b": "dish-a-price",
+      "pixels": 1200.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-a-card",
+      "b": "dish-a-add",
+      "pixels": 3549.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-b-card",
+      "b": "dish-b-code",
+      "pixels": 840.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-b-card",
+      "b": "dish-b-name",
+      "pixels": 2880.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-b-card",
+      "b": "dish-b-description",
+      "pixels": 13300.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-b-card",
+      "b": "dish-b-price",
+      "pixels": 1152.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-b-card",
+      "b": "dish-b-add",
+      "pixels": 3510.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-c-card",
+      "b": "dish-c-code",
+      "pixels": 840.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-c-card",
+      "b": "dish-c-name",
+      "pixels": 2880.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-c-card",
+      "b": "dish-c-description",
+      "pixels": 13300.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-c-card",
+      "b": "dish-c-price",
+      "pixels": 1200.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-c-card",
+      "b": "dish-c-add",
+      "pixels": 3549.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-26-card",
+      "b": "dish-26-code",
+      "pixels": 840.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-26-card",
+      "b": "dish-26-name",
+      "pixels": 7200.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-26-card",
+      "b": "dish-26-description",
+      "pixels": 9100.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-26-card",
+      "b": "dish-26-price",
+      "pixels": 1152.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "dish-26-card",
+      "b": "dish-26-add",
+      "pixels": 3510.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "cart-panel",
+      "b": "cart-title",
+      "pixels": 7590.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "cart-panel",
+      "b": "cart-explanation",
+      "pixels": 4200.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "cart-panel",
+      "b": "cart-empty-state",
+      "pixels": 4840.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "cart-panel",
+      "b": "cart-divider",
+      "pixels": 295.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "cart-panel",
+      "b": "cart-total-label",
+      "pixels": 1820.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "cart-panel",
+      "b": "cart-total-price",
+      "pixels": 1170.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "cart-panel",
+      "b": "cart-checkout",
+      "pixels": 14160.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "cart-panel",
+      "b": "cart-pickup-note",
+      "pixels": 5600.0,
+      "relationship": "container extent"
+    }
+  ],
+  "reviewGroups": {},
+  "uncoveredInkCells": [
+    "B4",
+    "C4"
+  ],
+  "comparisonSheets": []
+}
