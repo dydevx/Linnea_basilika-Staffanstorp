@@ -166,7 +166,7 @@ const MENU_SECTION_IMAGES = {
   guestsFavorites: { src: "assets/images/ai/mixed-plate.png", alt: "AI-illustration av en mixed plate med kycklingspett, räkor och curry" },
   starkBasilika: { src: "assets/images/ai/thai-basil.png", alt: "AI-illustration av kyckling med thaibasilika och chili" },
   vitloksmarinerad: { src: "assets/images/ai/garlic-beef.png", alt: "AI-illustration av vitlöksmarinerat nötkött med svartpeppar" },
-  huvudratter: { src: "assets/images/ai/mixed-plate.png", alt: "AI-illustration av asiatiska huvudrätter med jasminris" },
+  huvudratter: { src: "assets/images/generated/crispy-salmon.png", alt: "AI-illustration av krispig lax med jasminris och grönsaker" },
   gronCurry: { src: "assets/images/ai/green-curry.png", alt: "AI-illustration av grön thaicurry med jasminris" },
   gulCurry: { src: "assets/images/ai/yellow-curry.png", alt: "AI-illustration av gul thaicurry med kyckling" },
   rodCurry: { src: "assets/images/ai/red-curry.png", alt: "AI-illustration av röd thaicurry med kyckling" },
@@ -174,11 +174,11 @@ const MENU_SECTION_IMAGES = {
   wokadeNudlar: { src: "assets/images/ai/wok-noodles.png", alt: "AI-illustration av wokade nudlar med räkor och grönsaker" },
   makiRolls: { src: "assets/images/ai/sushi.png", alt: "AI-illustration av makirullar och laxnigiri" },
   crunchyRolls: { src: "assets/images/ai/crunchy-maki.png", alt: "AI-illustration av krispiga makirullar" },
-  nigiriMix: { src: "assets/images/ai/sushi.png", alt: "AI-illustration av ett urval nigiri och maki" },
-  nigiriSide: { src: "assets/images/ai/sushi.png", alt: "AI-illustration av laxnigiri" },
+  nigiriMix: { src: "assets/images/generated/nigiri-assortment.png", alt: "AI-illustration av ett urval nigiri" },
+  nigiriSide: { src: "assets/images/generated/nigiri-assortment.png", alt: "AI-illustration av nigiri med lax, tonfisk och räka" },
   sushiMixMeny: { src: "assets/images/ai/sushi.png", alt: "AI-illustration av en blandad sushimeny" },
   sushiBowls: { src: "assets/images/ai/sushi-bowl.png", alt: "AI-illustration av en sushi bowl med grillad lax och avokado" },
-  sides: { src: "assets/images/ai/crunchy-maki.png", alt: "AI-illustration av krispiga sushitillbehör" }
+  sides: { src: "assets/images/generated/asian-sides.png", alt: "AI-illustration av asiatiska smårätter och tillbehör" }
 };
 
 // Category filter tags

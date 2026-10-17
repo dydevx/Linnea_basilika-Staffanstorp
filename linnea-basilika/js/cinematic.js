@@ -6,12 +6,20 @@
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
   const imageRules = [
+    [/^meny-b\b/i, "assets/images/generated/mixed-plate-b.png"],
+    [/^meny-c\b/i, "assets/images/generated/mixed-plate-c.png"],
+    [/^meny-d\b/i, "assets/images/generated/mixed-plate-d.png"],
+    [/huvud-39/i, "assets/images/generated/crispy-salmon.png"],
+    [/huvud-46|spett|satay/i, "assets/images/generated/chicken-satay-landscape.png"],
+    [/gron-curry-14|gul-curry-25|rod-curry-15/i, "assets/images/generated/vegetable-tofu-curry.png"],
+    [/maki-spicy-tuna/i, "assets/images/generated/spicy-tuna-roll.png"],
+    [/nigiri-/i, "assets/images/generated/nigiri-assortment.png"],
+    [/side-|huvud-67/i, "assets/images/generated/asian-sides.png"],
     [/pad-thai/, "assets/images/generated/hero-pad-thai.png"],
     [/stark-basilika|basil/i, "assets/images/ai/thai-basil.png"],
     [/gron-curry|green/i, "assets/images/ai/green-curry.png"],
     [/gul-curry|yellow/i, "assets/images/ai/yellow-curry.png"],
     [/rod-curry|red/i, "assets/images/ai/red-curry.png"],
-    [/huvud-46|spett|satay/i, "assets/images/generated/chicken-satay.png"],
     [/dragon/i, "assets/images/generated/dragon-grill-roll.png"],
     [/crunchy|tempura|friterad/i, "assets/images/ai/crunchy-maki.png"],
     [/bowl/i, "assets/images/ai/sushi-bowl.png"],
