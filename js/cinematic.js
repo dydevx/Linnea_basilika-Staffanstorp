@@ -31,6 +31,15 @@
     [/meny-|mixed/i, "assets/images/ai/mixed-plate.png"]
   ];
 
+  const signatureImages = {
+    "pad-thai-58": "assets/images/generated/signature-pad-thai.jpg",
+    "stark-basilika-26": "assets/images/generated/signature-thai-basil.jpg",
+    "gron-curry-10": "assets/images/generated/signature-green-curry.jpg",
+    "huvud-46": "assets/images/generated/chicken-satay-landscape.png",
+    "maki-dragon": "assets/images/generated/signature-dragon-roll.jpg",
+    "mix-10": "assets/images/generated/signature-sushi-mix.jpg"
+  };
+
   window.getDishImage = function getDishImage(item) {
     if (!item) return "assets/images/ai/mixed-plate.png";
     if (item.image) return item.image;
@@ -75,7 +84,7 @@
       const payload = encodeURIComponent(JSON.stringify(cartPayload(item)));
       return `<article class="signature-card" style="--reveal-delay:${index * 55}ms">
         <button class="signature-media" type="button" data-open-dish="${item.id}" aria-label="Visa ${escapeHtml(shortNames[id])}">
-          <img src="${window.getDishImage(item)}" alt="${escapeHtml(shortNames[id])}" loading="lazy" decoding="async">
+          <img src="${signatureImages[id]}" alt="${escapeHtml(shortNames[id])}" loading="lazy" decoding="async">
         </button>
         <div class="signature-copy">
           <h3>${escapeHtml(shortNames[id])}</h3>

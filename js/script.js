@@ -175,8 +175,8 @@ const MENU_SECTION_IMAGES = {
   makiRolls: { src: "assets/images/ai/sushi.png", alt: "AI-illustration av makirullar och laxnigiri" },
   crunchyRolls: { src: "assets/images/ai/crunchy-maki.png", alt: "AI-illustration av krispiga makirullar" },
   nigiriMix: { src: "assets/images/generated/nigiri-assortment.png", alt: "AI-illustration av ett urval nigiri" },
-  nigiriSide: { src: "assets/images/generated/nigiri-assortment.png", alt: "AI-illustration av nigiri med lax, tonfisk och räka" },
-  sushiMixMeny: { src: "assets/images/ai/sushi.png", alt: "AI-illustration av en blandad sushimeny" },
+  nigiriSide: { src: "assets/images/generated/nigiri-side-selection.jpg", alt: "AI-illustration av tre nigiri med lax, tonfisk och räka" },
+  sushiMixMeny: { src: "assets/images/generated/sushi-mix-menu.jpg", alt: "AI-illustration av en blandad sushimeny med nigiri och maki" },
   sushiBowls: { src: "assets/images/ai/sushi-bowl.png", alt: "AI-illustration av en sushi bowl med grillad lax och avokado" },
   sides: { src: "assets/images/generated/asian-sides.png", alt: "AI-illustration av asiatiska smårätter och tillbehör" }
 };
@@ -220,8 +220,8 @@ function syncMenuBrowser() {
   document.getElementById("menu-collection-title").textContent = isSushi ? "Sushi & bowls" : "Thai & asiatiskt";
   document.getElementById("menu-collection-description").textContent = isSushi ? "Maki, nigiri och bowls. Utforska menyn och hitta din kombination." : "Från doftande curry till wok och Pad Thai. Hitta din favorit.";
   const photo = document.getElementById("menu-collection-image");
-  photo.src = isSushi ? "assets/images/ai/sushi.png" : "assets/images/ai/green-curry.png";
-  photo.alt = isSushi ? "AI-illustration av sushi" : "AI-illustration av thaicurry";
+  photo.src = isSushi ? "assets/images/generated/sushi-collection-sashimi.jpg" : "assets/images/generated/thai-collection-tom-kha.jpg";
+  photo.alt = isSushi ? "AI-illustration av sashimi med lax, tonfisk och hamachi" : "AI-illustration av en thailändsk middag med Tom Kha Gai";
   const panel = document.getElementById(isSushi ? "sushi-menu-container" : "thai-menu-container");
   const categories = new Set([...panel.querySelectorAll("[data-categories]")].flatMap(card => card.dataset.categories.split(" ")));
   document.querySelectorAll(".filter-btn").forEach(button => {
@@ -260,13 +260,12 @@ function renderMenuCard(item, sectionName) {
   const dishImg = window.getDishImage ? window.getDishImage(item) : "assets/images/ai/mixed-plate.png";
   const name = item.fullName || item.name;
   return `
-    <article class="menu-card catalog-menu-card" tabindex="0" role="button" data-menu-id="${escapeHtml(item.id)}" data-categories="${(item.category || []).join(" ")}" data-name="${escapeHtml((name || "").toLowerCase())}" data-code="${escapeHtml(String(item.code || ""))}">
-      <div class="catalog-dish-thumb-wrap">
-        <img src="${dishImg}" alt="${escapeHtml(name)}" class="catalog-dish-thumb" loading="lazy" decoding="async" />
-        ${item.code ? `<span class="catalog-dish-badge">Nr ${escapeHtml(String(item.code))}</span>` : ""}
-        ${item.spicyLevel ? `<span class="catalog-spicy-indicator" title="${item.spicyLevel === 1 ? 'Milt stark' : item.spicyLevel === 2 ? 'Stark' : 'Mycket stark'}">${'🌶️'.repeat(item.spicyLevel)}</span>` : ""}
-      </div>
+    <article class="menu-card catalog-menu-card catalog-menu-card-text" tabindex="0" role="button" data-menu-id="${escapeHtml(item.id)}" data-categories="${(item.category || []).join(" ")}" data-name="${escapeHtml((name || "").toLowerCase())}" data-code="${escapeHtml(String(item.code || ""))}">
       <div class="catalog-dish-body">
+        <div class="catalog-card-meta">
+          ${item.code ? `<span class="catalog-dish-badge">Nr ${escapeHtml(String(item.code))}</span>` : ""}
+          ${item.spicyLevel ? `<span class="catalog-spicy-indicator" title="${item.spicyLevel === 1 ? 'Milt stark' : item.spicyLevel === 2 ? 'Stark' : 'Mycket stark'}">${'🌶️'.repeat(item.spicyLevel)}</span>` : ""}
+        </div>
         <div class="catalog-dish-info">
           <h3 class="menu-card-name">${escapeHtml(name)}</h3>
           ${item.description ? `<p class="menu-card-desc">${escapeHtml(item.description)}</p>` : ""}
@@ -287,13 +286,12 @@ function renderMixedPlateCard(item) {
   const name = `Meny ${item.code} – Mixed Plate`;
   const dishImg = window.getDishImage ? window.getDishImage(item) : "assets/images/ai/mixed-plate.png";
   return `
-    <article class="menu-card catalog-menu-card mixed-plate-card" tabindex="0" role="button" data-menu-id="${escapeHtml(item.id)}" data-categories="${[...(item.category || []), "favoriter"].join(" ")}" data-name="${escapeHtml(name.toLowerCase())}" data-code="${escapeHtml(String(item.code || ""))}">
-      <div class="catalog-dish-thumb-wrap">
-        <img src="${dishImg}" alt="${escapeHtml(name)}" class="catalog-dish-thumb" loading="lazy" decoding="async" />
-        <span class="catalog-dish-badge">Meny ${escapeHtml(String(item.code))}</span>
-        <span class="catalog-featured-badge">Gästernas favorit</span>
-      </div>
+    <article class="menu-card catalog-menu-card catalog-menu-card-text mixed-plate-card" tabindex="0" role="button" data-menu-id="${escapeHtml(item.id)}" data-categories="${[...(item.category || []), "favoriter"].join(" ")}" data-name="${escapeHtml(name.toLowerCase())}" data-code="${escapeHtml(String(item.code || ""))}">
       <div class="catalog-dish-body">
+        <div class="catalog-card-meta">
+          <span class="catalog-dish-badge">Meny ${escapeHtml(String(item.code))}</span>
+          <span class="catalog-featured-badge">Gästernas favorit</span>
+        </div>
         <div class="catalog-dish-info">
           <h3 class="menu-card-name">Meny ${escapeHtml(String(item.code))}</h3>
           <ul class="mixed-plate-dishes">
